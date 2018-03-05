@@ -1,0 +1,8 @@
+language: objective-c
+osx_image: xcode9.2
+xcode_project: SplitSound.xcodeproj
+xcode_scheme: SplitSound
+xcode_sdk: iphonesimulator10.3
+
+script:
+    - xcodebuild clean build -sdk iphonesimulator10.3 -scheme SplitSound
