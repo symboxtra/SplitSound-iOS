@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F5F2F46527DE9899977B7EA /* Pods_SplitSound.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73809FF2F6E0C2EF7EDA962E /* Pods_SplitSound.framework */; };
 		3EC1E1AED28D977E9ABD3467 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC1E70B3E60058BEE4FD4F0 /* ModelController.swift */; };
 		3EC1E4FC0A99426F5AD3BB33 /* SplitSoundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC1E6A643F1A2A4515404B7 /* SplitSoundTests.swift */; };
 		3EC1E61A31E88096F8BB2188 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC1EACDD85DF3A502583571 /* RootViewController.swift */; };
@@ -16,6 +17,8 @@
 		3EC1EAF55EE8D6ED095ECD52 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC1E9D16D265791059A9DFE /* DataViewController.swift */; };
 		3EC1EBC42EA4F220B4FB7235 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC1E2BDF3252AC4E6A47FFD /* AppDelegate.swift */; };
 		3EC1EE76C0FC4D981208AB61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EC1E0589B59065FF784A01B /* LaunchScreen.storyboard */; };
+		610A10D3E7CB51B70715B1BB /* Pods_SplitSoundUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39038F658B27A37DEBB1DC8E /* Pods_SplitSoundUITests.framework */; };
+		AC11939FE917CC74547DBD32 /* Pods_SplitSoundTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BEA1BBBEF0B1B216AB3338F /* Pods_SplitSoundTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E145DAB5E61B499353BC647 /* Pods-SplitSound.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplitSound.release.xcconfig"; path = "Pods/Target Support Files/Pods-SplitSound/Pods-SplitSound.release.xcconfig"; sourceTree = "<group>"; };
+		1BEA1BBBEF0B1B216AB3338F /* Pods_SplitSoundTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SplitSoundTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39038F658B27A37DEBB1DC8E /* Pods_SplitSoundUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SplitSoundUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EC1E1ADFD093DC20E66BCE5 /* SplitSoundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SplitSoundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EC1E1FE62CA69333FFF24B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3EC1E20C491FC36EB7617146 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +57,12 @@
 		3EC1EACDD85DF3A502583571 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		3EC1EB12CAA30522C75F0F3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3EC1ED7EDA83C815C89493DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		73809FF2F6E0C2EF7EDA962E /* Pods_SplitSound.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SplitSound.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F6DF9B75132F5585E9BA0F /* Pods-SplitSoundUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplitSoundUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SplitSoundUITests/Pods-SplitSoundUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9512F89244760A95D0457800 /* Pods-SplitSoundTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplitSoundTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SplitSoundTests/Pods-SplitSoundTests.release.xcconfig"; sourceTree = "<group>"; };
+		DC55601E24B20E301BCCAAD9 /* Pods-SplitSoundTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplitSoundTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SplitSoundTests/Pods-SplitSoundTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E528647F90D5867C56C47187 /* Pods-SplitSound.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplitSound.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SplitSound/Pods-SplitSound.debug.xcconfig"; sourceTree = "<group>"; };
+		F1DDF265946D9220BF8BCC40 /* Pods-SplitSoundUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplitSoundUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SplitSoundUITests/Pods-SplitSoundUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F5F2F46527DE9899977B7EA /* Pods_SplitSound.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				610A10D3E7CB51B70715B1BB /* Pods_SplitSoundUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC11939FE917CC74547DBD32 /* Pods_SplitSoundTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,7 +143,32 @@
 				3EC1EC5932EAEAD0CD22FD97 /* SplitSound */,
 				3EC1EE669B272C131F5D1914 /* SplitSoundTests */,
 				3EC1E27BD0EE62CD977E4297 /* SplitSoundUITests */,
+				E3542BE7D17664B59C75958E /* Pods */,
+				94899218B2193E6EEAF1D5E8 /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		94899218B2193E6EEAF1D5E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73809FF2F6E0C2EF7EDA962E /* Pods_SplitSound.framework */,
+				1BEA1BBBEF0B1B216AB3338F /* Pods_SplitSoundTests.framework */,
+				39038F658B27A37DEBB1DC8E /* Pods_SplitSoundUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E3542BE7D17664B59C75958E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E528647F90D5867C56C47187 /* Pods-SplitSound.debug.xcconfig */,
+				0E145DAB5E61B499353BC647 /* Pods-SplitSound.release.xcconfig */,
+				DC55601E24B20E301BCCAAD9 /* Pods-SplitSoundTests.debug.xcconfig */,
+				9512F89244760A95D0457800 /* Pods-SplitSoundTests.release.xcconfig */,
+				F1DDF265946D9220BF8BCC40 /* Pods-SplitSoundUITests.debug.xcconfig */,
+				84F6DF9B75132F5585E9BA0F /* Pods-SplitSoundUITests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3EC1E661A0DD7B76E2808ABF /* Build configuration list for PBXNativeTarget "SplitSoundTests" */;
 			buildPhases = (
+				33C64EE3F5FAC8B3F8DA4DDB /* [CP] Check Pods Manifest.lock */,
 				3EC1E5A5F9EE939A0DD20EAF /* Sources */,
 				3EC1EEB1242E2AAB26986613 /* Frameworks */,
 				3EC1EF733E0DFCA8FE618788 /* Resources */,
+				14ECEA81C31CD9A26A5B6915 /* [CP] Embed Pods Frameworks */,
+				9F423E42654114060D28327E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -156,9 +199,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3EC1E2585A9F8BA5B89027EF /* Build configuration list for PBXNativeTarget "SplitSound" */;
 			buildPhases = (
+				5F786D0164D2C1AB7A0EDF61 /* [CP] Check Pods Manifest.lock */,
 				3EC1ED6ABD519BF8578B6F50 /* Sources */,
 				3EC1E5A8F3C79A4FC6503F6C /* Frameworks */,
 				3EC1EEBAFCC8643720BCEB10 /* Resources */,
+				404A161FE05ED2E390AA0C53 /* [CP] Embed Pods Frameworks */,
+				B54FB802F4F8C97A14FE0BA1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -173,9 +219,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3EC1EEEF3A8D1ACACE5F1D34 /* Build configuration list for PBXNativeTarget "SplitSoundUITests" */;
 			buildPhases = (
+				0B9DB31620FBA2C304884228 /* [CP] Check Pods Manifest.lock */,
 				3EC1E548852BDE3536C2B330 /* Sources */,
 				3EC1E75350F1E289D09BFB3F /* Frameworks */,
 				3EC1E93B0C2B2259335A5422 /* Resources */,
+				B8C5BC8A87FEACA2CF935F27 /* [CP] Embed Pods Frameworks */,
+				C998C07B5B9C04009201CACD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -240,6 +289,158 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B9DB31620FBA2C304884228 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SplitSoundUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		14ECEA81C31CD9A26A5B6915 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SplitSoundTests/Pods-SplitSoundTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		33C64EE3F5FAC8B3F8DA4DDB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SplitSoundTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		404A161FE05ED2E390AA0C53 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SplitSound/Pods-SplitSound-frameworks.sh",
+				"${PODS_ROOT}/AudioKit/iOS/AudioKit.framework",
+				"${PODS_ROOT}/AudioKit/iOS/AudioKitUI.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AudioKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AudioKitUI.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SplitSound/Pods-SplitSound-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F786D0164D2C1AB7A0EDF61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SplitSound-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F423E42654114060D28327E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SplitSoundTests/Pods-SplitSoundTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B54FB802F4F8C97A14FE0BA1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SplitSound/Pods-SplitSound-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8C5BC8A87FEACA2CF935F27 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SplitSoundUITests/Pods-SplitSoundUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C998C07B5B9C04009201CACD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SplitSoundUITests/Pods-SplitSoundUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3EC1E548852BDE3536C2B330 /* Sources */ = {
@@ -306,6 +507,7 @@
 /* Begin XCBuildConfiguration section */
 		3EC1E0EE7B6D5EB899995769 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E528647F90D5867C56C47187 /* Pods-SplitSound.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SplitSound/Info.plist;
@@ -319,6 +521,7 @@
 		};
 		3EC1E1B67A01E9EB86340A49 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC55601E24B20E301BCCAAD9 /* Pods-SplitSoundTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SplitSound.app/SplitSound";
 				INFOPLIST_FILE = SplitSoundTests/Info.plist;
@@ -383,6 +586,7 @@
 		};
 		3EC1E4119922E423DCEADBA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1DDF265946D9220BF8BCC40 /* Pods-SplitSoundUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = SplitSoundUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -396,6 +600,7 @@
 		};
 		3EC1E9AA47C22E713C80853F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9512F89244760A95D0457800 /* Pods-SplitSoundTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SplitSound.app/SplitSound";
 				INFOPLIST_FILE = SplitSoundTests/Info.plist;
@@ -410,6 +615,7 @@
 		};
 		3EC1EB976C8B9CB832D1215B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84F6DF9B75132F5585E9BA0F /* Pods-SplitSoundUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = SplitSoundUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -480,6 +686,7 @@
 		};
 		3EC1EFBD3E43698AC7DDBEDE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E145DAB5E61B499353BC647 /* Pods-SplitSound.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SplitSound/Info.plist;
