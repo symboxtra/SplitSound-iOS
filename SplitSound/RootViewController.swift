@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 class RootViewController: UIViewController, UIPageViewControllerDelegate {
 
     var pageViewController: UIPageViewController?
