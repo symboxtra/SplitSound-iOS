@@ -52,7 +52,7 @@
 		3EC1E5B650193A4AC0BA2092 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		3EC1E6A643F1A2A4515404B7 /* SplitSoundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitSoundTests.swift; sourceTree = "<group>"; };
 		3EC1E70B3E60058BEE4FD4F0 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
-		3EC1E9D16D265791059A9DFE /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		3EC1E9D16D265791059A9DFE /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; usesTabs = 0; };
 		3EC1E9E8A90443954AF13611 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		3EC1EA18E6A43066004BD6C4 /* SplitSound.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplitSound.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EC1EACDD85DF3A502583571 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
