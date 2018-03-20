@@ -12,4 +12,4 @@ before_script:
     - gem install xcpretty
 
 script:
-    - xcodebuild test -project SplitSound.xcodeproj -scheme SplitSound -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 8,OS=latest' | xcpretty --color; exit ${PIPESTATUS[0]}
+    - xcodebuild test -project SplitSound.xcodproj -scheme SplitSound -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 8,OS=latest' | xcpretty --color; exit ${PIPESTATUS[0]}
