@@ -141,12 +141,12 @@
 		E3542BE7D17664B59C75958E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				84F6DF9B75132F5585E9BA0F /* Pods-SplitSoundUITests.release.xcconfig */,
 				E528647F90D5867C56C47187 /* Pods-SplitSound.debug.xcconfig */,
 				0E145DAB5E61B499353BC647 /* Pods-SplitSound.release.xcconfig */,
 				DC55601E24B20E301BCCAAD9 /* Pods-SplitSoundTests.debug.xcconfig */,
 				9512F89244760A95D0457800 /* Pods-SplitSoundTests.release.xcconfig */,
 				F1DDF265946D9220BF8BCC40 /* Pods-SplitSoundUITests.debug.xcconfig */,
-				84F6DF9B75132F5585E9BA0F /* Pods-SplitSoundUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -490,6 +490,7 @@
 			baseConfigurationReference = E528647F90D5867C56C47187 /* Pods-SplitSound.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SplitSound/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Symboxtra-Software.SplitSound";
@@ -669,6 +670,7 @@
 			baseConfigurationReference = 0E145DAB5E61B499353BC647 /* Pods-SplitSound.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SplitSound/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Symboxtra-Software.SplitSound";

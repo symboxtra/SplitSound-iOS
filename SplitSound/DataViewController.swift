@@ -14,11 +14,11 @@ class DataViewController: UIViewController {
     @IBOutlet weak var dataLabel: UILabel!
     var dataObject: String = ""
 
-
+    @IBOutlet weak var TestText: UITextView!
 
     override func viewDidLoad() {
     super.viewDidLoad()
-    self.dataLabel.text = "Hello World"
+    TestText.text = "Test"
     }
 
 
