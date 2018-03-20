@@ -21,16 +21,12 @@ import UIKit
 
 class ModelController: NSObject, UIPageViewControllerDataSource {
 
-    var pageData: [String] = []
+    var pageData: [String] = ["Connect", "Broadcast"]
 
 
 
     override init() {
         super.init()
-
-    // Create the data model.
-    let dateFormatter = DateFormatter()
-    pageData = dateFormatter.monthSymbols
     }
 
 
