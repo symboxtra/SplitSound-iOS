@@ -24,6 +24,9 @@ class SplitSoundTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        XCTAssertTrue(2 + 2 == 4)
+        XCTAssertTrue(4 - 1 == 3, "Quick maths")
+        
     }
     
     func testPerformanceExample() {
