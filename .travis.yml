@@ -1,8 +1,14 @@
 language: objective-c
 osx_image: xcode9.2
+git:
+    depth: 5 # Limit unneeded commit depth
+    submodules: false
+
+before_install:
+    - git submodule update --init --recursive
 
 before_script:
-    gem install xcpretty
+    - gem install xcpretty
 
 script:
     - xcodebuild clean build -project SplitSound.xcodeproj -sdk iphonesimulator | xcpretty
