@@ -10,6 +10,7 @@ before_install:
     - git submodule update --init --recursive
 
 install:
+    - pod update
     - pod install
 
 before_script:
