@@ -1,5 +1,6 @@
 #!/bin/bash
 
-echo Building
+echo -------- Building... --------
+echo
 
-xcodebuild build -project SplitSound.xcodeproj/ -scheme SplitSound -sdk iphonesimulator | xcpretty --color
+xcodebuild build -workspace SplitSound.xcworkspace -scheme SplitSound -sdk iphonesimulator | xcpretty --color

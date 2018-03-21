@@ -1,5 +1,7 @@
-#!bin/bash
+#!/bin/bash
 
-echo running tests
+echo -------- Testing... --------
+echo
 
-xctool run-tests -project SplitSound.xcodeproj/ -scheme SplitSound -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 8,OS=latest'
+xcodebuild -workspace SplitSound.xcworkspace -scheme SplitSound -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 8,OS=latest' test | xcpretty --color
+
