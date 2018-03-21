@@ -16,6 +16,9 @@
 		3EC1EAF55EE8D6ED095ECD52 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC1E9D16D265791059A9DFE /* DataViewController.swift */; };
 		3EC1EBC42EA4F220B4FB7235 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC1E2BDF3252AC4E6A47FFD /* AppDelegate.swift */; };
 		3EC1EE76C0FC4D981208AB61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EC1E0589B59065FF784A01B /* LaunchScreen.storyboard */; };
+		B4C700E32139B8162F143825 /* Pods_SplitSound.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77AB8CEF6976E0A82A81C9EA /* Pods_SplitSound.framework */; };
+		E807F9B6C9B728EDE8DCC21B /* Pods_SplitSoundUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4F5F80F1AFDCE0E602D1B4 /* Pods_SplitSoundUITests.framework */; };
+		EE664BE9C50774A8E6DBC8B4 /* Pods_SplitSoundTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDB0EAF3A0C67DA0C926EF15 /* Pods_SplitSoundTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		0E145DAB5E61B499353BC647 /* Pods-SplitSound.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplitSound.release.xcconfig"; path = "Pods/Target Support Files/Pods-SplitSound/Pods-SplitSound.release.xcconfig"; sourceTree = "<group>"; };
+		2B4F5F80F1AFDCE0E602D1B4 /* Pods_SplitSoundUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SplitSoundUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EC1E1ADFD093DC20E66BCE5 /* SplitSoundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SplitSoundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EC1E1FE62CA69333FFF24B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3EC1E20C491FC36EB7617146 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
@@ -52,8 +56,10 @@
 		3EC1EACDD85DF3A502583571 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		3EC1EB12CAA30522C75F0F3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3EC1ED7EDA83C815C89493DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		77AB8CEF6976E0A82A81C9EA /* Pods_SplitSound.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SplitSound.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F6DF9B75132F5585E9BA0F /* Pods-SplitSoundUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplitSoundUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SplitSoundUITests/Pods-SplitSoundUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9512F89244760A95D0457800 /* Pods-SplitSoundTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplitSoundTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SplitSoundTests/Pods-SplitSoundTests.release.xcconfig"; sourceTree = "<group>"; };
+		BDB0EAF3A0C67DA0C926EF15 /* Pods_SplitSoundTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SplitSoundTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC55601E24B20E301BCCAAD9 /* Pods-SplitSoundTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplitSoundTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SplitSoundTests/Pods-SplitSoundTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E528647F90D5867C56C47187 /* Pods-SplitSound.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplitSound.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SplitSound/Pods-SplitSound.debug.xcconfig"; sourceTree = "<group>"; };
 		F1DDF265946D9220BF8BCC40 /* Pods-SplitSoundUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplitSoundUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SplitSoundUITests/Pods-SplitSoundUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -64,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4C700E32139B8162F143825 /* Pods_SplitSound.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E807F9B6C9B728EDE8DCC21B /* Pods_SplitSoundUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE664BE9C50774A8E6DBC8B4 /* Pods_SplitSoundTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +144,18 @@
 				3EC1EE669B272C131F5D1914 /* SplitSoundTests */,
 				3EC1E27BD0EE62CD977E4297 /* SplitSoundUITests */,
 				E3542BE7D17664B59C75958E /* Pods */,
+				C972126BB66931784591DCB4 /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		C972126BB66931784591DCB4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77AB8CEF6976E0A82A81C9EA /* Pods_SplitSound.framework */,
+				BDB0EAF3A0C67DA0C926EF15 /* Pods_SplitSoundTests.framework */,
+				2B4F5F80F1AFDCE0E602D1B4 /* Pods_SplitSoundUITests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		E3542BE7D17664B59C75958E /* Pods */ = {

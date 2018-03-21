@@ -1,6 +1,0 @@
-framework module Pods_SplitSound {
-  umbrella header "Pods-SplitSound-umbrella.h"
-
-  export *
-  module * { export * }
-}
