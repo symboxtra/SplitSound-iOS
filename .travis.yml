@@ -10,7 +10,6 @@ before_install:
     - git submodule update --init --recursive
 
 install:
-    - gem install xcov --no-ri --no-rdoc        # For generating coverage reports
     - gem install xcpretty --no-ri --no-rdoc    # For cleaning xcodebuild output
     - gem install cocoapods --no-ri --no-rdoc
     - pod update
@@ -20,13 +19,11 @@ script:
     - ./test.sh # Run test script
 
 after_success:
-    - bash <(curl -s https://codecov.io/bash) || echo "Codecov did not collect coverage reports"
-    - curl https://raw.githubusercontent.com/k3rn31p4nic/travis-ci-discord-webhook/master/send.sh > send.sh
-    - chmod +x send.sh
+    - bash <(curl -s https://codecov.io/bash) || echo "Codecov did not collect coverage reports" # Collect coverage data
+    - curl https://raw.githubusercontent.com/k3rn31p4nic/travis-ci-discord-webhook/master/send.sh > send.sh && chmod +x send.sh
     - ./send.sh success $WEBHOOK_URL # Webhook to Discord
 
 
 after_failure:
-    - curl https://raw.githubusercontent.com/k3rn31p4nic/travis-ci-discord-webhook/master/send.sh > send.sh
-    - chmod +x send.sh
+    - curl https://raw.githubusercontent.com/k3rn31p4nic/travis-ci-discord-webhook/master/send.sh > send.sh && chmod +x send.sh
     - ./send.sh failure $WEBHOOK_URL # Webhook to Discord
