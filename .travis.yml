@@ -20,13 +20,13 @@ script:
     - ./test.sh # Run test script
 
 after_success:
-    - xcov -w SplitSound.xcworkspace -s SplitSound -q Debug --coveralls_service_name travis-ci --coveralls_service_job ${CI_BUILD_NUMBER} -o xcov-output # Generate coverage reports and upload to coveralls
-    - curl https://raw.githubusercontent.com/k3rn31p4nic/travis-ci-discord-webhook/master/send.sh
+    - xcov -w SplitSound.xcworkspace -s SplitSound -q Debug --coveralls_repo_token $COVERALLS_REPO_TOKEN -o xcov-output # Generate coverage reports and upload to coveralls (relies on secure travis env variable)
+    - curl https://raw.githubusercontent.com/k3rn31p4nic/travis-ci-discord-webhook/master/send.sh > send.sh
     - chmod +x send.sh
     - ./send.sh success $WEBHOOK_URL # Webhook to Discord
 
 
 after_failure:
-    - curl https://raw.githubusercontent.com/k3rn31p4nic/travis-ci-discord-webhook/master/send.sh
+    - curl https://raw.githubusercontent.com/k3rn31p4nic/travis-ci-discord-webhook/master/send.sh > send.sh
     - chmod +x send.sh
     - ./send.sh failure $WEBHOOK_URL # Webhook to Discord
