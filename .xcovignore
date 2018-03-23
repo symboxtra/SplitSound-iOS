@@ -1,0 +1,5 @@
+# Exclude all View controllers
+- .*View.swift
+
+# Exclude all dependencies
+- Pods
