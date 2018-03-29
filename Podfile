@@ -5,7 +5,7 @@ target 'SplitSound' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
   pod 'AudioKit'
-  pod 'AudioKit/UI'
+  #pod 'AudioKit/UI'
   # Pods for SplitSound
 
   target 'SplitSoundTests' do
