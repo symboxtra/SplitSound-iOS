@@ -18,7 +18,8 @@ class DataViewController: UIViewController {
 
     override func viewDidLoad() {
     super.viewDidLoad()
-    TestText.text = "Test"
+        //let Object = OCPPClass()
+        //TestText.text = Object.printFromCPP()
     }
 
 

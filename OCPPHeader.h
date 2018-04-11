@@ -9,11 +9,10 @@
 #ifndef OCPPHeader_h
 #define OCPPHeader_h
 #import <Foundation/Foundation.h>
-//using namespace std;
+
 @interface OCPPClass: NSObject
 
 -(NSString*)printFromCPP;
 
 @end
-
 #endif /* OCPPHeader_h */

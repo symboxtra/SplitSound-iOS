@@ -16,6 +16,10 @@
 		3EC1EAF55EE8D6ED095ECD52 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC1E9D16D265791059A9DFE /* DataViewController.swift */; };
 		3EC1EBC42EA4F220B4FB7235 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC1E2BDF3252AC4E6A47FFD /* AppDelegate.swift */; };
 		3EC1EE76C0FC4D981208AB61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EC1E0589B59065FF784A01B /* LaunchScreen.storyboard */; };
+		7213864D207EC040001515AD /* OCPPFile.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7213864C207EC040001515AD /* OCPPFile.mm */; };
+		72138657207EC329001515AD /* testh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72138655207EC329001515AD /* testh.cpp */; };
+		72138658207EC329001515AD /* testh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72138655207EC329001515AD /* testh.cpp */; };
+		72138659207EC329001515AD /* testh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72138655207EC329001515AD /* testh.cpp */; };
 		E807F9B6C9B728EDE8DCC21B /* Pods_SplitSoundUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4F5F80F1AFDCE0E602D1B4 /* Pods_SplitSoundUITests.framework */; };
 		EE664BE9C50774A8E6DBC8B4 /* Pods_SplitSoundTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDB0EAF3A0C67DA0C926EF15 /* Pods_SplitSoundTests.framework */; };
 /* End PBXBuildFile section */
@@ -55,6 +59,13 @@
 		3EC1EACDD85DF3A502583571 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		3EC1EB12CAA30522C75F0F3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3EC1ED7EDA83C815C89493DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7213864B207EC031001515AD /* OCPPHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCPPHeader.h; sourceTree = "<group>"; };
+		7213864C207EC040001515AD /* OCPPFile.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OCPPFile.mm; sourceTree = "<group>"; };
+		7213864F207EC084001515AD /* testh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testh.h; sourceTree = "<group>"; };
+		72138650207EC214001515AD /* SplitSound-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SplitSound-Bridging-Header.h"; sourceTree = "<group>"; };
+		72138651207EC26F001515AD /* SplitSound-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SplitSound-Bridging-Header.h"; sourceTree = "<group>"; };
+		72138655207EC329001515AD /* testh.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = testh.cpp; sourceTree = "<group>"; };
+		72DCB445207D5E33003B8827 /* RTPSession.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTPSession.h; sourceTree = "<group>"; };
 		77AB8CEF6976E0A82A81C9EA /* Pods_SplitSound.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SplitSound.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F6DF9B75132F5585E9BA0F /* Pods-SplitSoundUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplitSoundUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SplitSoundUITests/Pods-SplitSoundUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9512F89244760A95D0457800 /* Pods-SplitSoundTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplitSoundTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SplitSoundTests/Pods-SplitSoundTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +129,7 @@
 				3EC1E0589B59065FF784A01B /* LaunchScreen.storyboard */,
 				3EC1E2BDF3252AC4E6A47FFD /* AppDelegate.swift */,
 				3EC1EE71F148048A3405F251 /* Main.storyboard */,
+				72DCB445207D5E33003B8827 /* RTPSession.h */,
 				3EC1EACDD85DF3A502583571 /* RootViewController.swift */,
 				3EC1E9D16D265791059A9DFE /* DataViewController.swift */,
 				3EC1E70B3E60058BEE4FD4F0 /* ModelController.swift */,
@@ -137,6 +149,11 @@
 		3EC1EFD1553B9648DE7E503A = {
 			isa = PBXGroup;
 			children = (
+				72138655207EC329001515AD /* testh.cpp */,
+				72138651207EC26F001515AD /* SplitSound-Bridging-Header.h */,
+				7213864F207EC084001515AD /* testh.h */,
+				7213864C207EC040001515AD /* OCPPFile.mm */,
+				7213864B207EC031001515AD /* OCPPHeader.h */,
 				3EC1E20CCE6BEA09D3391EA9 /* Products */,
 				3EC1EC5932EAEAD0CD22FD97 /* SplitSound */,
 				3EC1EE669B272C131F5D1914 /* SplitSoundTests */,
@@ -149,6 +166,7 @@
 		C972126BB66931784591DCB4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				72138650207EC214001515AD /* SplitSound-Bridging-Header.h */,
 				77AB8CEF6976E0A82A81C9EA /* Pods_SplitSound.framework */,
 				BDB0EAF3A0C67DA0C926EF15 /* Pods_SplitSoundTests.framework */,
 				2B4F5F80F1AFDCE0E602D1B4 /* Pods_SplitSoundUITests.framework */,
@@ -241,6 +259,18 @@
 			isa = PBXProject;
 			attributes = {
 				ORGANIZATIONNAME = "Symboxtra Software";
+				TargetAttributes = {
+					3EC1E343F8F732EE66478638 = {
+						LastSwiftMigration = 0920;
+					};
+					3EC1E5ED0F53682E17695933 = {
+						DevelopmentTeam = VY3PXR54B9;
+						LastSwiftMigration = 0920;
+					};
+					3EC1E8A9456F899AF4B9E6B2 = {
+						LastSwiftMigration = 0920;
+					};
+				};
 			};
 			buildConfigurationList = 3EC1E82F3FD65B3912ADC65C /* Build configuration list for PBXProject "SplitSound" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -445,6 +475,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72138659207EC329001515AD /* testh.cpp in Sources */,
 				3EC1E68537BD474BA08549FD /* SplitSoundUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,6 +484,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72138658207EC329001515AD /* testh.cpp in Sources */,
 				3EC1E4FC0A99426F5AD3BB33 /* SplitSoundTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,7 +493,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7213864D207EC040001515AD /* OCPPFile.mm in Sources */,
 				3EC1EBC42EA4F220B4FB7235 /* AppDelegate.swift in Sources */,
+				72138657207EC329001515AD /* testh.cpp in Sources */,
 				3EC1E61A31E88096F8BB2188 /* RootViewController.swift in Sources */,
 				3EC1EAF55EE8D6ED095ECD52 /* DataViewController.swift in Sources */,
 				3EC1E1AED28D977E9ABD3467 /* ModelController.swift in Sources */,
@@ -508,11 +542,14 @@
 			baseConfigurationReference = E528647F90D5867C56C47187 /* Pods-SplitSound.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = VY3PXR54B9;
 				INFOPLIST_FILE = SplitSound/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Symboxtra-Software.SplitSound";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -523,10 +560,12 @@
 			baseConfigurationReference = DC55601E24B20E301BCCAAD9 /* Pods-SplitSoundTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SplitSound.app/SplitSound";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SplitSoundTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Symboxtra-Software.SplitSoundTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -540,7 +579,7 @@
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
@@ -578,6 +617,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "SplitSound-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -587,10 +627,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F1DDF265946D9220BF8BCC40 /* Pods-SplitSoundUITests.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SplitSoundUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Symboxtra-Software.SplitSoundUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = SplitSound;
@@ -602,6 +644,7 @@
 			baseConfigurationReference = 9512F89244760A95D0457800 /* Pods-SplitSoundTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SplitSound.app/SplitSound";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SplitSoundTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Symboxtra-Software.SplitSoundTests";
@@ -616,6 +659,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 84F6DF9B75132F5585E9BA0F /* Pods-SplitSoundUITests.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SplitSoundUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Symboxtra-Software.SplitSoundUITests";
@@ -633,7 +677,7 @@
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
@@ -679,6 +723,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "SplitSound-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -688,7 +733,9 @@
 			baseConfigurationReference = 0E145DAB5E61B499353BC647 /* Pods-SplitSound.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = VY3PXR54B9;
 				INFOPLIST_FILE = SplitSound/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Symboxtra-Software.SplitSound";
