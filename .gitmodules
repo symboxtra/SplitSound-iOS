@@ -1,4 +1,4 @@
-[submodule "JRTPLib"]
+[submodule "JRTPLIB"]
 	path = JRTPLIB
 	url = https://github.com/symboxtra/JRTPLIB
 [submodule "JThread"]
