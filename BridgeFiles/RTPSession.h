@@ -2,7 +2,7 @@
 //  RTPSession.h
 //  SplitSound
 //
-//  Created by Symboxtra Software on 4/11/18.
+//  Created by Neel Patel on 4/11/18.
 //  Copyright © 2018 Symboxtra Software. All rights reserved.
 //
 
