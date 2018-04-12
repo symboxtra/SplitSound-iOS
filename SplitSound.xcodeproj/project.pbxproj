@@ -66,10 +66,8 @@
 		7213864B207EC031001515AD /* OCPPHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCPPHeader.h; sourceTree = "<group>"; };
 		7213864C207EC040001515AD /* OCPPFile.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OCPPFile.mm; sourceTree = "<group>"; };
 		7213864F207EC084001515AD /* testh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testh.h; sourceTree = "<group>"; };
-		72138650207EC214001515AD /* SplitSound-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SplitSound-Bridging-Header.h"; sourceTree = "<group>"; };
 		72138651207EC26F001515AD /* SplitSound-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SplitSound-Bridging-Header.h"; sourceTree = "<group>"; };
 		72138655207EC329001515AD /* testh.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = testh.cpp; sourceTree = "<group>"; };
-		72DCB445207D5E33003B8827 /* RTPSession.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTPSession.h; sourceTree = "<group>"; };
 		77AB8CEF6976E0A82A81C9EA /* Pods_SplitSound.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SplitSound.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F6DF9B75132F5585E9BA0F /* Pods-SplitSoundUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplitSoundUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SplitSoundUITests/Pods-SplitSoundUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9512F89244760A95D0457800 /* Pods-SplitSoundTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplitSoundTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SplitSoundTests/Pods-SplitSoundTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -136,7 +134,6 @@
 				3EC1E0589B59065FF784A01B /* LaunchScreen.storyboard */,
 				3EC1E2BDF3252AC4E6A47FFD /* AppDelegate.swift */,
 				3EC1EE71F148048A3405F251 /* Main.storyboard */,
-				72DCB445207D5E33003B8827 /* RTPSession.h */,
 				3EC1EACDD85DF3A502583571 /* RootViewController.swift */,
 				3EC1E9D16D265791059A9DFE /* DataViewController.swift */,
 				3EC1E70B3E60058BEE4FD4F0 /* ModelController.swift */,
@@ -175,7 +172,6 @@
 		C972126BB66931784591DCB4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-
 				23837A29207E9A46006CB895 /* libjrtp.a */,
 				23090B92207FF9A5001F9839 /* libjrtp.a */,
 				77AB8CEF6976E0A82A81C9EA /* Pods_SplitSound.framework */,
@@ -406,7 +402,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72138659207EC329001515AD /* testh.cpp in Sources */,
 				3EC1E68537BD474BA08549FD /* SplitSoundUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,7 +410,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72138658207EC329001515AD /* testh.cpp in Sources */,
 				3EC1E4FC0A99426F5AD3BB33 /* SplitSoundTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,9 +418,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7213864D207EC040001515AD /* OCPPFile.mm in Sources */,
 				3EC1EBC42EA4F220B4FB7235 /* AppDelegate.swift in Sources */,
-				72138657207EC329001515AD /* testh.cpp in Sources */,
 				3EC1E61A31E88096F8BB2188 /* RootViewController.swift in Sources */,
 				23837A2C207E9B8E006CB895 /* RTPSession.mm in Sources */,
 				3EC1EAF55EE8D6ED095ECD52 /* DataViewController.swift in Sources */,
@@ -555,7 +547,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/SplitSound-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
