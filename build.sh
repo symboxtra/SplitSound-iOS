@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Source environment variables
+source scripts/env.sh
+
 echo -------- Building... --------
 echo
 

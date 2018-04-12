@@ -7,5 +7,8 @@
 #                                                       #
 #########################################################
 
+# Ensure piped commands fail properly
+set -o pipefail
+
 # Ensure compilation for x86 emulators
 CFLAGS="ONLY_ACTIVE_ARCH=NO"
