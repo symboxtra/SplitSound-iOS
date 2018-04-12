@@ -4,7 +4,6 @@
 //
 //  Created by Davis Jordan on 3/5/18.
 //  Copyright © 2018 Symboxtra Software. All rights reserved.
-//
 
 import UIKit
 
@@ -18,6 +17,8 @@ class DataViewController: UIViewController {
 
     override func viewDidLoad() {
     super.viewDidLoad()
+        var instanceOfRTPSession: RTPSession = RTPSession();
+    TestText.text = "Test"
         //let Object = OCPPClass()
         //TestText.text = Object.printFromCPP()
     }
