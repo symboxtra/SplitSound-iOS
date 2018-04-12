@@ -21,7 +21,7 @@ import UIKit
 
 class ModelController: NSObject, UIPageViewControllerDataSource {
 
-    var pageData: [String] = ["Connect", "Broadcast"]
+    var pageData: [String] = ["Connect"]
 
 
 
