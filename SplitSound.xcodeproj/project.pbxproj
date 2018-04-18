@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		23090B93207FF9A5001F9839 /* libjrtp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23090B92207FF9A5001F9839 /* libjrtp.a */; };
 		232B39392087FCC500CAD354 /* liblive555.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 232B39382087FCC400CAD354 /* liblive555.a */; };
+		232B393A208809A100CAD354 /* testRTSPClient.mm in Sources */ = {isa = PBXBuildFile; fileRef = 72138655207EC329001515AD /* testRTSPClient.mm */; };
+		232B393C208809CB00CAD354 /* RTPController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 232B393B208809CB00CAD354 /* RTPController.mm */; };
 		23837A2C207E9B8E006CB895 /* RTPSession.mm in Sources */ = {isa = PBXBuildFile; fileRef = 23837A2B207E9B8E006CB895 /* RTPSession.mm */; };
 		3EC1E1AED28D977E9ABD3467 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC1E70B3E60058BEE4FD4F0 /* ModelController.swift */; };
 		3EC1E4FC0A99426F5AD3BB33 /* SplitSoundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC1E6A643F1A2A4515404B7 /* SplitSoundTests.swift */; };
@@ -45,6 +47,8 @@
 		0E145DAB5E61B499353BC647 /* Pods-SplitSound.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplitSound.release.xcconfig"; path = "Pods/Target Support Files/Pods-SplitSound/Pods-SplitSound.release.xcconfig"; sourceTree = "<group>"; };
 		23090B92207FF9A5001F9839 /* libjrtp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjrtp.a; path = "lib-iOS/lib/libjrtp.a"; sourceTree = "<group>"; };
 		232B39382087FCC400CAD354 /* liblive555.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblive555.a; path = "lib-rtp/liblive555.a"; sourceTree = "<group>"; };
+		232B393B208809CB00CAD354 /* RTPController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RTPController.mm; sourceTree = "<group>"; };
+		232B393D208809E000CAD354 /* RTPController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTPController.h; sourceTree = "<group>"; };
 		23837A29207E9A46006CB895 /* libjrtp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjrtp.a; path = JRTPLib/build/lib/libjrtp.a; sourceTree = "<group>"; };
 		23837A2B207E9B8E006CB895 /* RTPSession.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; name = RTPSession.mm; path = BridgeFiles/RTPSession.mm; sourceTree = SOURCE_ROOT; };
 		23837A2D207E9BDD006CB895 /* RTPSession.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; name = RTPSession.h; path = BridgeFiles/RTPSession.h; sourceTree = SOURCE_ROOT; };
@@ -67,9 +71,9 @@
 		3EC1ED7EDA83C815C89493DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7213864B207EC031001515AD /* OCPPHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCPPHeader.h; sourceTree = "<group>"; };
 		7213864C207EC040001515AD /* OCPPFile.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OCPPFile.mm; sourceTree = "<group>"; };
-		7213864F207EC084001515AD /* testh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testh.h; sourceTree = "<group>"; };
-		72138651207EC26F001515AD /* SplitSound-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SplitSound-Bridging-Header.h"; sourceTree = "<group>"; };
-		72138655207EC329001515AD /* testh.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = testh.cpp; sourceTree = "<group>"; };
+		7213864F207EC084001515AD /* testRTSPClient.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = testRTSPClient.h; sourceTree = "<group>"; };
+		72138651207EC26F001515AD /* SplitSound-Bridging-Header.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = "SplitSound-Bridging-Header.h"; sourceTree = "<group>"; };
+		72138655207EC329001515AD /* testRTSPClient.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = testRTSPClient.mm; sourceTree = "<group>"; };
 		77AB8CEF6976E0A82A81C9EA /* Pods_SplitSound.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SplitSound.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F6DF9B75132F5585E9BA0F /* Pods-SplitSoundUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplitSoundUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SplitSoundUITests/Pods-SplitSoundUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9512F89244760A95D0457800 /* Pods-SplitSoundTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplitSoundTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SplitSoundTests/Pods-SplitSoundTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -131,6 +135,8 @@
 		3EC1EC5932EAEAD0CD22FD97 /* SplitSound */ = {
 			isa = PBXGroup;
 			children = (
+				72138655207EC329001515AD /* testRTSPClient.mm */,
+				7213864F207EC084001515AD /* testRTSPClient.h */,
 				23837A32207EB33E006CB895 /* SplitSound-Bridging-Header.h */,
 				3EC1E20C491FC36EB7617146 /* Info.plist */,
 				3EC1ED7EDA83C815C89493DE /* Assets.xcassets */,
@@ -142,6 +148,8 @@
 				3EC1E70B3E60058BEE4FD4F0 /* ModelController.swift */,
 				23837A2B207E9B8E006CB895 /* RTPSession.mm */,
 				23837A2D207E9BDD006CB895 /* RTPSession.h */,
+				232B393B208809CB00CAD354 /* RTPController.mm */,
+				232B393D208809E000CAD354 /* RTPController.h */,
 			);
 			path = SplitSound;
 			sourceTree = "<group>";
@@ -158,9 +166,7 @@
 		3EC1EFD1553B9648DE7E503A = {
 			isa = PBXGroup;
 			children = (
-				72138655207EC329001515AD /* testh.cpp */,
 				72138651207EC26F001515AD /* SplitSound-Bridging-Header.h */,
-				7213864F207EC084001515AD /* testh.h */,
 				7213864C207EC040001515AD /* OCPPFile.mm */,
 				7213864B207EC031001515AD /* OCPPHeader.h */,
 				3EC1E20CCE6BEA09D3391EA9 /* Products */,
@@ -423,8 +429,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EC1EBC42EA4F220B4FB7235 /* AppDelegate.swift in Sources */,
+				232B393A208809A100CAD354 /* testRTSPClient.mm in Sources */,
 				3EC1E61A31E88096F8BB2188 /* RootViewController.swift in Sources */,
 				23837A2C207E9B8E006CB895 /* RTPSession.mm in Sources */,
+				232B393C208809CB00CAD354 /* RTPController.mm in Sources */,
 				3EC1EAF55EE8D6ED095ECD52 /* DataViewController.swift in Sources */,
 				3EC1E1AED28D977E9ABD3467 /* ModelController.swift in Sources */,
 			);

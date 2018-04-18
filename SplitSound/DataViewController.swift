@@ -7,7 +7,6 @@
 
 import UIKit
 
-
 class DataViewController: UIViewController {
 
     @IBOutlet weak var dataLabel: UILabel!
