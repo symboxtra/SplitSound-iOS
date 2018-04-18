@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		23090B93207FF9A5001F9839 /* libjrtp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23090B92207FF9A5001F9839 /* libjrtp.a */; };
+		232B39392087FCC500CAD354 /* liblive555.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 232B39382087FCC400CAD354 /* liblive555.a */; };
 		23837A2C207E9B8E006CB895 /* RTPSession.mm in Sources */ = {isa = PBXBuildFile; fileRef = 23837A2B207E9B8E006CB895 /* RTPSession.mm */; };
 		3EC1E1AED28D977E9ABD3467 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC1E70B3E60058BEE4FD4F0 /* ModelController.swift */; };
 		3EC1E4FC0A99426F5AD3BB33 /* SplitSoundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC1E6A643F1A2A4515404B7 /* SplitSoundTests.swift */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		0E145DAB5E61B499353BC647 /* Pods-SplitSound.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplitSound.release.xcconfig"; path = "Pods/Target Support Files/Pods-SplitSound/Pods-SplitSound.release.xcconfig"; sourceTree = "<group>"; };
 		23090B92207FF9A5001F9839 /* libjrtp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjrtp.a; path = "lib-iOS/lib/libjrtp.a"; sourceTree = "<group>"; };
+		232B39382087FCC400CAD354 /* liblive555.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblive555.a; path = "lib-rtp/liblive555.a"; sourceTree = "<group>"; };
 		23837A29207E9A46006CB895 /* libjrtp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjrtp.a; path = JRTPLib/build/lib/libjrtp.a; sourceTree = "<group>"; };
 		23837A2B207E9B8E006CB895 /* RTPSession.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; name = RTPSession.mm; path = BridgeFiles/RTPSession.mm; sourceTree = SOURCE_ROOT; };
 		23837A2D207E9BDD006CB895 /* RTPSession.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; name = RTPSession.h; path = BridgeFiles/RTPSession.h; sourceTree = SOURCE_ROOT; };
@@ -82,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				232B39392087FCC500CAD354 /* liblive555.a in Frameworks */,
 				23090B93207FF9A5001F9839 /* libjrtp.a in Frameworks */,
 				D0F23CF5D5A4AF96AA733C98 /* Pods_SplitSound.framework in Frameworks */,
 			);
@@ -172,6 +175,7 @@
 		C972126BB66931784591DCB4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				232B39382087FCC400CAD354 /* liblive555.a */,
 				23837A29207E9A46006CB895 /* libjrtp.a */,
 				23090B92207FF9A5001F9839 /* libjrtp.a */,
 				77AB8CEF6976E0A82A81C9EA /* Pods_SplitSound.framework */,
@@ -468,12 +472,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				GCC_INPUT_FILETYPE = automatic;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/lib-iOS/include";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/lib-iOS/include",
+					"$(PROJECT_DIR)/lib-rtp/include",
+				);
 				INFOPLIST_FILE = SplitSound/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/lib-iOS/lib",
+					"$(PROJECT_DIR)/lib-rtp",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Symboxtra-Software.SplitSound";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -669,12 +677,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				GCC_INPUT_FILETYPE = automatic;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/lib-iOS/include";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/lib-iOS/include",
+					"$(PROJECT_DIR)/lib-rtp/include",
+				);
 				INFOPLIST_FILE = SplitSound/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/lib-iOS/lib",
+					"$(PROJECT_DIR)/lib-rtp",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Symboxtra-Software.SplitSound";
 				PRODUCT_NAME = "$(TARGET_NAME)";

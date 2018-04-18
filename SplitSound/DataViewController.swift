@@ -17,7 +17,7 @@ class DataViewController: UIViewController {
 
     override func viewDidLoad() {
     super.viewDidLoad()
-        var instanceOfRTPSession: RTPSession = RTPSession();
+        //var instanceOfRTPSession: RTPSession = RTPSession();
     TestText.text = "Test"
         //let Object = OCPPClass()
         //TestText.text = Object.printFromCPP()
