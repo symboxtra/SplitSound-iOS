@@ -10,10 +10,10 @@ before_install:
     - git submodule update --init --recursive
 
 install:
-    - gem install xcpretty --no-ri --no-rdoc    # For cleaning xcodebuild output
-    - gem install cocoapods --no-ri --no-rdoc
-    - pod update
-    - pod install
+   - gem install xcpretty --no-ri --no-rdoc    # For cleaning xcodebuild output
+#   - gem install cocoapods --no-ri --no-rdoc
+#   - pod update
+#   - pod install
 
 script:
     - ./test.sh # Run test script
