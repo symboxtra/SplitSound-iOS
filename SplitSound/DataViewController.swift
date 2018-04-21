@@ -11,13 +11,11 @@ class DataViewController: UIViewController {
 
     @IBOutlet weak var dataLabel: UILabel!
     var dataObject: String = ""
-
-    @IBOutlet weak var TestText: UITextView!
-
+    
     override func viewDidLoad() {
     super.viewDidLoad()
         //var instanceOfRTPSession: RTPSession = RTPSession();
-    TestText.text = "Test"
+        
         //let Object = OCPPClass()
         //TestText.text = Object.printFromCPP()
     }
