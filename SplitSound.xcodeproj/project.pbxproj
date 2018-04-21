@@ -226,7 +226,7 @@
 						LastSwiftMigration = 0920;
 					};
 					3EC1E5ED0F53682E17695933 = {
-						DevelopmentTeam = Q39K69H4X5;
+						DevelopmentTeam = VY3PXR54B9;
 						LastSwiftMigration = 0920;
 					};
 					3EC1E8A9456F899AF4B9E6B2 = {
@@ -349,7 +349,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Q39K69H4X5;
+				DEVELOPMENT_TEAM = VY3PXR54B9;
 				GCC_INPUT_FILETYPE = automatic;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/lib-rtp/include";
 				INFOPLIST_FILE = SplitSound/Info.plist;
@@ -545,7 +545,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Q39K69H4X5;
+				DEVELOPMENT_TEAM = VY3PXR54B9;
 				GCC_INPUT_FILETYPE = automatic;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/lib-rtp/include";
 				INFOPLIST_FILE = SplitSound/Info.plist;
