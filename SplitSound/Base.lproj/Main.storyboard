@@ -115,6 +115,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="T1O-Lc-PBP">
+                            <rect key="frame" x="0.0" y="72" width="375" height="27"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Back">
+                                <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <segue destination="S4R-Ja-viH" kind="show" id="eRu-sn-Kua"/>
+                            </connections>
+                        </button>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="listenerCell" id="gFU-Gy-ff7">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -139,4 +149,7 @@
     <resources>
         <image name="Sound-Wave-Headphones" width="2294" height="1908"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="eRu-sn-Kua"/>
+    </inferredMetricsTieBreakers>
 </document>
