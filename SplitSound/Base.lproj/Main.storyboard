@@ -79,7 +79,7 @@
                                 <rect key="frame" x="147" y="468" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.21131424492385786" green="0.21131424492385786" blue="0.21131424492385786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Play"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBound" value="YES"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -150,6 +150,6 @@
         <image name="Sound-Wave-Headphones" width="2294" height="1908"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="eRu-sn-Kua"/>
+        <segue reference="Cj6-hx-9mn"/>
     </inferredMetricsTieBreakers>
 </document>
