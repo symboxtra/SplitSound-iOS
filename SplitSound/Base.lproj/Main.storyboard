@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="S4R-Ja-viH">
-    <device id="retina5_9" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -11,45 +11,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home-->
+        <!--Data View Controller-->
         <scene sceneID="snT-py-3hH">
             <objects>
                 <viewController storyboardIdentifier="DataViewController" id="S4R-Ja-viH" customClass="DataViewController" customModule="SplitSound" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="ZwX-cT-FIQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Hwc-WM-HTp">
-                                <rect key="frame" x="112" y="331" width="150" height="150"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSP-V8-OhV">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                        <color key="backgroundColor" red="1" green="0.50796289741626488" blue="0.11576291627825541" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="150" id="0Tl-wd-Xbr"/>
-                                            <constraint firstAttribute="width" constant="150" id="ck7-9m-kSw"/>
-                                        </constraints>
-                                        <size key="titleShadowOffset" width="100" height="100"/>
-                                        <state key="normal">
-                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBound" value="NO"/>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="75"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                                <integer key="value" value="1"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
-                                                <integer key="value" value="150"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                </subviews>
-                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XhE-Wd-lTq">
-                                <rect key="frame" x="121" y="354.66666666666669" width="132" height="103"/>
+                                <rect key="frame" x="121.5" y="282" width="132" height="103"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="132" id="7dW-Zq-m9N"/>
                                     <constraint firstAttribute="height" constant="103" id="B9a-0q-ahY"/>
@@ -57,11 +28,12 @@
                                 <state key="normal" title="Button" image="Sound-Wave-Headphones"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Fz-3e-vat">
-                                <rect key="frame" x="147" y="549.66666666666663" width="80" height="80"/>
+                                <rect key="frame" x="147.5" y="430.5" width="80" height="80"/>
                                 <color key="backgroundColor" red="0.21131424492385786" green="0.21131424492385786" blue="0.21131424492385786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="rPF-zi-Mit"/>
-                                    <constraint firstAttribute="height" constant="80" id="uvx-AX-V04"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="3Uz-yD-Mcp"/>
+                                    <constraint firstAttribute="width" constant="80" id="Md8-z0-l69"/>
+                                    <constraint firstAttribute="height" constant="80" id="qlQ-le-YhT"/>
                                 </constraints>
                                 <state key="normal" title="Play"/>
                                 <userDefinedRuntimeAttributes>
@@ -72,7 +44,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xwo-UA-m73">
-                                <rect key="frame" x="0.0" y="739" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="608" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem title="Other Listeners" id="1Bg-0M-n98">
@@ -82,20 +54,82 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gl5-LU-n9C">
+                                <rect key="frame" x="100" y="245.5" width="175" height="175"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="175" id="16N-8v-aJA"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="175" id="Jfx-FB-hyj"/>
+                                    <constraint firstAttribute="width" constant="175" id="hVj-cu-qYn"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Middle"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="16N-8v-aJA"/>
+                                        <exclude reference="Jfx-FB-hyj"/>
+                                        <exclude reference="hVj-cu-qYn"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="16N-8v-aJA"/>
+                                        <include reference="Jfx-FB-hyj"/>
+                                        <include reference="hVj-cu-qYn"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="30K-Z8-uZO">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="0.21176470589999999" green="0.21176470589999999" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <barButtonItem title="Menu" id="cK3-Xw-4eu"/>
+                                </items>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="0.071244447969543101" green="0.071244447969543101" blue="0.071244447969543101" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="gl5-LU-n9C" firstAttribute="centerY" secondItem="ZwX-cT-FIQ" secondAttribute="centerY" id="2eN-xn-Qkk"/>
                             <constraint firstItem="XhE-Wd-lTq" firstAttribute="centerX" secondItem="ZwX-cT-FIQ" secondAttribute="centerX" id="FRf-w0-6Mx"/>
-                            <constraint firstItem="Hwc-WM-HTp" firstAttribute="centerX" secondItem="ZwX-cT-FIQ" secondAttribute="centerX" id="Nxj-d1-lQL"/>
+                            <constraint firstItem="gl5-LU-n9C" firstAttribute="centerX" secondItem="ZwX-cT-FIQ" secondAttribute="centerX" id="K4H-dU-lpl"/>
                             <constraint firstItem="XhE-Wd-lTq" firstAttribute="centerY" secondItem="ZwX-cT-FIQ" secondAttribute="centerY" id="Qlf-Hp-iGF"/>
-                            <constraint firstItem="6Fz-3e-vat" firstAttribute="centerX" secondItem="ZwX-cT-FIQ" secondAttribute="centerX" id="YA6-Ig-9Gi"/>
-                            <constraint firstItem="Hwc-WM-HTp" firstAttribute="centerY" secondItem="ZwX-cT-FIQ" secondAttribute="centerY" id="YvJ-Cc-uCm"/>
-                            <constraint firstItem="6Fz-3e-vat" firstAttribute="centerY" secondItem="ZwX-cT-FIQ" secondAttribute="centerY" constant="183.5" id="z0n-Fh-5aG"/>
+                            <constraint firstItem="gl5-LU-n9C" firstAttribute="centerX" secondItem="ZwX-cT-FIQ" secondAttribute="centerX" id="VZ7-P1-42k"/>
+                            <constraint firstItem="6Fz-3e-vat" firstAttribute="centerX" secondItem="ZwX-cT-FIQ" secondAttribute="centerX" id="YA6-Ig-9Gi">
+                                <variation key="widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="gl5-LU-n9C" firstAttribute="centerY" secondItem="ZwX-cT-FIQ" secondAttribute="centerY" id="kTX-98-XDn"/>
+                            <constraint firstItem="6Fz-3e-vat" firstAttribute="centerY" secondItem="ZwX-cT-FIQ" secondAttribute="centerY" constant="171" id="z0n-Fh-5aG">
+                                <variation key="widthClass=compact" constant="137"/>
+                            </constraint>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="K9I-jD-KjA"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="gl5-LU-n9C"/>
+                                <exclude reference="30K-Z8-uZO"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="2eN-xn-Qkk"/>
+                                <exclude reference="K4H-dU-lpl"/>
+                                <exclude reference="VZ7-P1-42k"/>
+                                <exclude reference="kTX-98-XDn"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <exclude reference="XhE-Wd-lTq"/>
+                                <include reference="gl5-LU-n9C"/>
+                                <include reference="30K-Z8-uZO"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="2eN-xn-Qkk"/>
+                                <include reference="K4H-dU-lpl"/>
+                                <include reference="VZ7-P1-42k"/>
+                                <include reference="kTX-98-XDn"/>
+                            </mask>
+                        </variation>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Home" id="BxO-sd-jun"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GmD-Rr-ZGN" sceneMemberID="firstResponder"/>
@@ -107,18 +141,18 @@
             <objects>
                 <viewController id="u7C-qL-wHo" customClass="DataViewController" customModule="SplitSound" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hu5-ng-whH">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QMT-gw-RoW">
-                                <rect key="frame" x="0.0" y="44" width="375" height="658"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="561"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Df7-HF-75R">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Df7-HF-75R" id="D0N-OY-8Pd">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -126,7 +160,7 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Og4-ZA-5En">
-                                <rect key="frame" x="16" y="710" width="54" height="30"/>
+                                <rect key="frame" x="16" y="589" width="54" height="30"/>
                                 <state key="normal" title="Dismiss"/>
                                 <connections>
                                     <action selector="DismissPressed:" destination="u7C-qL-wHo" eventType="touchUpInside" id="29F-EJ-uEc"/>
@@ -152,6 +186,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Middle" width="4739" height="4750"/>
         <image name="Sound-Wave-Headphones" width="2294" height="1908"/>
     </resources>
 </document>
