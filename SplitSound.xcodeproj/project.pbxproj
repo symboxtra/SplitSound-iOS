@@ -12,7 +12,6 @@
 		232B39402088237F00CAD354 /* liblive555.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 232B39382087FCC400CAD354 /* liblive555.a */; };
 		3EC1E1AED28D977E9ABD3467 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC1E70B3E60058BEE4FD4F0 /* ModelController.swift */; };
 		3EC1E4FC0A99426F5AD3BB33 /* SplitSoundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC1E6A643F1A2A4515404B7 /* SplitSoundTests.swift */; };
-		3EC1E61A31E88096F8BB2188 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC1EACDD85DF3A502583571 /* RootViewController.swift */; };
 		3EC1E68537BD474BA08549FD /* SplitSoundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC1E45ECF5144A4F3139F03 /* SplitSoundUITests.swift */; };
 		3EC1E8C601E8FD8AC556A25D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EC1EE71F148048A3405F251 /* Main.storyboard */; };
 		3EC1E97786912C7BABE2C507 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EC1ED7EDA83C815C89493DE /* Assets.xcassets */; };
@@ -56,7 +55,6 @@
 		3EC1E9D16D265791059A9DFE /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; usesTabs = 0; };
 		3EC1E9E8A90443954AF13611 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		3EC1EA18E6A43066004BD6C4 /* SplitSound.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplitSound.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3EC1EACDD85DF3A502583571 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		3EC1EB12CAA30522C75F0F3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3EC1ED7EDA83C815C89493DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		720AB1AA20913E11000ECF9F /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -121,7 +119,6 @@
 				3EC1E0589B59065FF784A01B /* LaunchScreen.storyboard */,
 				3EC1E2BDF3252AC4E6A47FFD /* AppDelegate.swift */,
 				3EC1EE71F148048A3405F251 /* Main.storyboard */,
-				3EC1EACDD85DF3A502583571 /* RootViewController.swift */,
 				3EC1E9D16D265791059A9DFE /* DataViewController.swift */,
 				3EC1E70B3E60058BEE4FD4F0 /* ModelController.swift */,
 				232B393B208809CB00CAD354 /* RTPController.mm */,
@@ -307,7 +304,6 @@
 				3EC1EBC42EA4F220B4FB7235 /* AppDelegate.swift in Sources */,
 				720AB1AB20913E11000ECF9F /* TableViewController.swift in Sources */,
 				232B393A208809A100CAD354 /* testRTSPClient.mm in Sources */,
-				3EC1E61A31E88096F8BB2188 /* RootViewController.swift in Sources */,
 				232B393C208809CB00CAD354 /* RTPController.mm in Sources */,
 				3EC1EAF55EE8D6ED095ECD52 /* DataViewController.swift in Sources */,
 				3EC1E1AED28D977E9ABD3467 /* ModelController.swift in Sources */,

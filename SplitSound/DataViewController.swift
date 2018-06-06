@@ -20,7 +20,11 @@ class DataViewController: UIViewController {
         //TestText.text = Object.printFromCPP()
     }
 
-
+    //action to take away table when the dismiss button is pressed
+    @IBAction func DismissPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
@@ -29,10 +33,9 @@ class DataViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
-    self.dataLabel!.text = dataObject
+    //self.dataLabel!.text = dataObject
 
     }
-
-
+    
 
 }

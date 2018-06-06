@@ -11,19 +11,16 @@ import UIKit
 class TableViewController: UITableViewController {
 
     //array to hold the current listeners
-    var listeners = [String]()
+    var listeners: [String] = ["Gustavo Rodriguez", "Gergey Boi", "Design Choice", "WIRES"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        //hard-coded listeners for testing
-        listeners = ["Davis", "Georgey Boi", "U free it?", "WIRES!!"]
         
         // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+        //self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+         //self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,12 +30,12 @@ class TableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
+   /*override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return 3
     }
 
     
@@ -50,7 +47,7 @@ class TableViewController: UITableViewController {
         cell.textLabel?.text = listeners[indexPath.row]
 
         return cell
-    }
+    }*/
     
 
     /*
