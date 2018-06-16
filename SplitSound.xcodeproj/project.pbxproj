@@ -18,7 +18,7 @@
 		3EC1EAF55EE8D6ED095ECD52 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC1E9D16D265791059A9DFE /* DataViewController.swift */; };
 		3EC1EBC42EA4F220B4FB7235 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC1E2BDF3252AC4E6A47FFD /* AppDelegate.swift */; };
 		3EC1EE76C0FC4D981208AB61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EC1E0589B59065FF784A01B /* LaunchScreen.storyboard */; };
-		720AB1AB20913E11000ECF9F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720AB1AA20913E11000ECF9F /* TableViewController.swift */; };
+		5C4E2F6220D5C083003E8E75 /* blurViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4E2F6120D5C083003E8E75 /* blurViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +57,7 @@
 		3EC1EA18E6A43066004BD6C4 /* SplitSound.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplitSound.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EC1EB12CAA30522C75F0F3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3EC1ED7EDA83C815C89493DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		720AB1AA20913E11000ECF9F /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		5C4E2F6120D5C083003E8E75 /* blurViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blurViewController.swift; sourceTree = "<group>"; };
 		7213864F207EC084001515AD /* testRTSPClient.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = testRTSPClient.h; sourceTree = "<group>"; };
 		72138651207EC26F001515AD /* SplitSound-Bridging-Header.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = "SplitSound-Bridging-Header.h"; sourceTree = "<group>"; };
 		72138655207EC329001515AD /* testRTSPClient.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = testRTSPClient.mm; sourceTree = "<group>"; };
@@ -123,7 +123,7 @@
 				3EC1E70B3E60058BEE4FD4F0 /* ModelController.swift */,
 				232B393B208809CB00CAD354 /* RTPController.mm */,
 				232B393D208809E000CAD354 /* RTPController.h */,
-				720AB1AA20913E11000ECF9F /* TableViewController.swift */,
+				5C4E2F6120D5C083003E8E75 /* blurViewController.swift */,
 			);
 			path = SplitSound;
 			sourceTree = "<group>";
@@ -302,7 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EC1EBC42EA4F220B4FB7235 /* AppDelegate.swift in Sources */,
-				720AB1AB20913E11000ECF9F /* TableViewController.swift in Sources */,
+				5C4E2F6220D5C083003E8E75 /* blurViewController.swift in Sources */,
 				232B393A208809A100CAD354 /* testRTSPClient.mm in Sources */,
 				232B393C208809CB00CAD354 /* RTPController.mm in Sources */,
 				3EC1EAF55EE8D6ED095ECD52 /* DataViewController.swift in Sources */,

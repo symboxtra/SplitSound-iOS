@@ -25,6 +25,11 @@ class DataViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    //action for when the back button is pressed in the menu
+    @IBAction func BackPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
