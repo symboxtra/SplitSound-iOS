@@ -15,8 +15,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
      var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-    // Override point for customization after application launch.
-    return true
+        
+    //get model number of user's device and run the correct storyboard
+        var storyboard: UIStoryboard
+        
+        //instantiate UIWindow
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        
+        //get model name
+        let modelName = UIDevice.modelName
+        print(modelName)
+        
+        //set the correct story board
+        if(modelName.range(of: "8") != nil) {
+            storyboard = UIStoryboard(name: "Phone6-8", bundle: nil)
+            self.window!.rootViewController = storyboard.instantiateInitialViewController()
+        } else {
+            storyboard = UIStoryboard(name: "Cancer", bundle: nil)
+            self.window!.rootViewController = storyboard.instantiateInitialViewController()
+        }
+        self.window!.rootViewController = storyboard.instantiateInitialViewController()
+        
+        self.window!.makeKeyAndVisible()
+        
+        return true
     }
 
 

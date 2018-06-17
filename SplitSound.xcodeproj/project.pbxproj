@@ -13,12 +13,14 @@
 		3EC1E1AED28D977E9ABD3467 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC1E70B3E60058BEE4FD4F0 /* ModelController.swift */; };
 		3EC1E4FC0A99426F5AD3BB33 /* SplitSoundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC1E6A643F1A2A4515404B7 /* SplitSoundTests.swift */; };
 		3EC1E68537BD474BA08549FD /* SplitSoundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC1E45ECF5144A4F3139F03 /* SplitSoundUITests.swift */; };
-		3EC1E8C601E8FD8AC556A25D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EC1EE71F148048A3405F251 /* Main.storyboard */; };
+		3EC1E8C601E8FD8AC556A25D /* Phone6-8.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EC1EE71F148048A3405F251 /* Phone6-8.storyboard */; };
 		3EC1E97786912C7BABE2C507 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EC1ED7EDA83C815C89493DE /* Assets.xcassets */; };
 		3EC1EAF55EE8D6ED095ECD52 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC1E9D16D265791059A9DFE /* DataViewController.swift */; };
 		3EC1EBC42EA4F220B4FB7235 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC1E2BDF3252AC4E6A47FFD /* AppDelegate.swift */; };
 		3EC1EE76C0FC4D981208AB61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EC1E0589B59065FF784A01B /* LaunchScreen.storyboard */; };
 		5C4E2F6220D5C083003E8E75 /* blurViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4E2F6120D5C083003E8E75 /* blurViewController.swift */; };
+		5CE72E5720D60E2E00ECA63B /* Cancer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CE72E5620D60E2E00ECA63B /* Cancer.storyboard */; };
+		5CE72E5920D610A000ECA63B /* DeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE72E5820D610A000ECA63B /* DeviceModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,9 +57,11 @@
 		3EC1E9D16D265791059A9DFE /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; usesTabs = 0; };
 		3EC1E9E8A90443954AF13611 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		3EC1EA18E6A43066004BD6C4 /* SplitSound.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplitSound.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3EC1EB12CAA30522C75F0F3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3EC1EB12CAA30522C75F0F3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Phone6-8.storyboard"; sourceTree = "<group>"; };
 		3EC1ED7EDA83C815C89493DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C4E2F6120D5C083003E8E75 /* blurViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blurViewController.swift; sourceTree = "<group>"; };
+		5CE72E5620D60E2E00ECA63B /* Cancer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cancer.storyboard; sourceTree = "<group>"; };
+		5CE72E5820D610A000ECA63B /* DeviceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceModel.swift; sourceTree = "<group>"; };
 		7213864F207EC084001515AD /* testRTSPClient.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = testRTSPClient.h; sourceTree = "<group>"; };
 		72138651207EC26F001515AD /* SplitSound-Bridging-Header.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = "SplitSound-Bridging-Header.h"; sourceTree = "<group>"; };
 		72138655207EC329001515AD /* testRTSPClient.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = testRTSPClient.mm; sourceTree = "<group>"; };
@@ -118,12 +122,14 @@
 				3EC1ED7EDA83C815C89493DE /* Assets.xcassets */,
 				3EC1E0589B59065FF784A01B /* LaunchScreen.storyboard */,
 				3EC1E2BDF3252AC4E6A47FFD /* AppDelegate.swift */,
-				3EC1EE71F148048A3405F251 /* Main.storyboard */,
+				3EC1EE71F148048A3405F251 /* Phone6-8.storyboard */,
 				3EC1E9D16D265791059A9DFE /* DataViewController.swift */,
 				3EC1E70B3E60058BEE4FD4F0 /* ModelController.swift */,
 				232B393B208809CB00CAD354 /* RTPController.mm */,
 				232B393D208809E000CAD354 /* RTPController.h */,
 				5C4E2F6120D5C083003E8E75 /* blurViewController.swift */,
+				5CE72E5620D60E2E00ECA63B /* Cancer.storyboard */,
+				5CE72E5820D610A000ECA63B /* DeviceModel.swift */,
 			);
 			path = SplitSound;
 			sourceTree = "<group>";
@@ -265,9 +271,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CE72E5720D60E2E00ECA63B /* Cancer.storyboard in Resources */,
 				3EC1E97786912C7BABE2C507 /* Assets.xcassets in Resources */,
 				3EC1EE76C0FC4D981208AB61 /* LaunchScreen.storyboard in Resources */,
-				3EC1E8C601E8FD8AC556A25D /* Main.storyboard in Resources */,
+				3EC1E8C601E8FD8AC556A25D /* Phone6-8.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +310,7 @@
 			files = (
 				3EC1EBC42EA4F220B4FB7235 /* AppDelegate.swift in Sources */,
 				5C4E2F6220D5C083003E8E75 /* blurViewController.swift in Sources */,
+				5CE72E5920D610A000ECA63B /* DeviceModel.swift in Sources */,
 				232B393A208809A100CAD354 /* testRTSPClient.mm in Sources */,
 				232B393C208809CB00CAD354 /* RTPController.mm in Sources */,
 				3EC1EAF55EE8D6ED095ECD52 /* DataViewController.swift in Sources */,
@@ -334,12 +342,12 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		3EC1EE71F148048A3405F251 /* Main.storyboard */ = {
+		3EC1EE71F148048A3405F251 /* Phone6-8.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				3EC1EB12CAA30522C75F0F3D /* Base */,
 			);
-			name = Main.storyboard;
+			name = "Phone6-8.storyboard";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
