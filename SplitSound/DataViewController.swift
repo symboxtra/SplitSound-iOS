@@ -20,8 +20,12 @@ class DataViewController: UIViewController {
         //TestText.text = Object.printFromCPP()
     }
 
-    //action to take away table when the dismiss button is pressed
+    //actions to take away table when the dismiss button is pressed
     @IBAction func DismissPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func XDismissPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
