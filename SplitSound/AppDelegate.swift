@@ -30,8 +30,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if(modelName.range(of: "8") != nil) {
             storyboard = UIStoryboard(name: "Phone6-8", bundle: nil)
             self.window!.rootViewController = storyboard.instantiateInitialViewController()
-        } else {
+        } else if(modelName.range(of: "X") != nil){
             storyboard = UIStoryboard(name: "Cancer", bundle: nil)
+            self.window!.rootViewController = storyboard.instantiateInitialViewController()
+        }
+        else {
+            storyboard = UIStoryboard(name: "OldAF", bundle: nil)
             self.window!.rootViewController = storyboard.instantiateInitialViewController()
         }
         self.window!.rootViewController = storyboard.instantiateInitialViewController()

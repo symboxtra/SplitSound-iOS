@@ -19,6 +19,7 @@
 		3EC1EBC42EA4F220B4FB7235 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC1E2BDF3252AC4E6A47FFD /* AppDelegate.swift */; };
 		3EC1EE76C0FC4D981208AB61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EC1E0589B59065FF784A01B /* LaunchScreen.storyboard */; };
 		5C4E2F6220D5C083003E8E75 /* blurViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4E2F6120D5C083003E8E75 /* blurViewController.swift */; };
+		5C4E51D420DEE9D500A56366 /* OldAF.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C4E51D320DEE9D500A56366 /* OldAF.storyboard */; };
 		5CE72E5720D60E2E00ECA63B /* Cancer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CE72E5620D60E2E00ECA63B /* Cancer.storyboard */; };
 		5CE72E5920D610A000ECA63B /* DeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE72E5820D610A000ECA63B /* DeviceModel.swift */; };
 /* End PBXBuildFile section */
@@ -60,6 +61,7 @@
 		3EC1EB12CAA30522C75F0F3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Phone6-8.storyboard"; sourceTree = "<group>"; };
 		3EC1ED7EDA83C815C89493DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C4E2F6120D5C083003E8E75 /* blurViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blurViewController.swift; sourceTree = "<group>"; };
+		5C4E51D320DEE9D500A56366 /* OldAF.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OldAF.storyboard; sourceTree = "<group>"; };
 		5CE72E5620D60E2E00ECA63B /* Cancer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cancer.storyboard; sourceTree = "<group>"; };
 		5CE72E5820D610A000ECA63B /* DeviceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceModel.swift; sourceTree = "<group>"; };
 		7213864F207EC084001515AD /* testRTSPClient.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = testRTSPClient.h; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				5C4E2F6120D5C083003E8E75 /* blurViewController.swift */,
 				5CE72E5620D60E2E00ECA63B /* Cancer.storyboard */,
 				5CE72E5820D610A000ECA63B /* DeviceModel.swift */,
+				5C4E51D320DEE9D500A56366 /* OldAF.storyboard */,
 			);
 			path = SplitSound;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CE72E5720D60E2E00ECA63B /* Cancer.storyboard in Resources */,
+				5C4E51D420DEE9D500A56366 /* OldAF.storyboard in Resources */,
 				3EC1E97786912C7BABE2C507 /* Assets.xcassets in Resources */,
 				3EC1EE76C0FC4D981208AB61 /* LaunchScreen.storyboard in Resources */,
 				3EC1E8C601E8FD8AC556A25D /* Phone6-8.storyboard in Resources */,

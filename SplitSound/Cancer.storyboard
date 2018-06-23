@@ -26,9 +26,11 @@
                                 </constraints>
                                 <state key="normal" image="Middle"/>
                             </button>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cRB-WE-fXs">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cRB-WE-fXs">
                                 <rect key="frame" x="0.0" y="734" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="xN5-c8-ioN"/>
+                                </constraints>
                                 <items>
                                     <barButtonItem title="Other Listeners" id="KM8-Nj-ouj">
                                         <connections>
@@ -37,16 +39,30 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f17-1o-FaH">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <items/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gUD-Hr-PMb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="2MD-VX-XEt"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Menu" id="Ym2-f2-cvX">
+                                        <connections>
+                                            <segue destination="W0U-R0-Mv4" kind="show" id="5PP-ey-1Km"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
                             </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="gUD-Hr-PMb" firstAttribute="leading" secondItem="cRB-WE-fXs" secondAttribute="leading" id="1rR-1F-jTe"/>
+                            <constraint firstItem="gUD-Hr-PMb" firstAttribute="leading" secondItem="P0l-qT-V3V" secondAttribute="leading" id="RoT-8r-Dz5"/>
+                            <constraint firstItem="gUD-Hr-PMb" firstAttribute="trailing" secondItem="cRB-WE-fXs" secondAttribute="trailing" id="c3U-MD-lWB"/>
+                            <constraint firstItem="cRB-WE-fXs" firstAttribute="bottom" secondItem="Dbi-Oj-D8A" secondAttribute="bottom" id="jM0-oU-ahN"/>
                             <constraint firstItem="HIm-6M-hTG" firstAttribute="centerY" secondItem="P0l-qT-V3V" secondAttribute="centerY" id="jhc-wI-f2z"/>
+                            <constraint firstItem="gUD-Hr-PMb" firstAttribute="top" secondItem="Dbi-Oj-D8A" secondAttribute="top" constant="-44" id="nag-gI-sdu"/>
                             <constraint firstItem="HIm-6M-hTG" firstAttribute="centerX" secondItem="P0l-qT-V3V" secondAttribute="centerX" id="oQ3-2n-fYx"/>
+                            <constraint firstItem="gUD-Hr-PMb" firstAttribute="centerX" secondItem="HIm-6M-hTG" secondAttribute="centerX" id="xca-hl-26b"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Dbi-Oj-D8A"/>
                     </view>
@@ -54,6 +70,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4jl-jf-A8i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="64.799999999999997" y="103.44827586206897"/>
+        </scene>
+        <!--Data View Controller-->
+        <scene sceneID="TIi-3a-uPK">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" id="W0U-R0-Mv4" customClass="DataViewController" customModule="SplitSound" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Td-Da-gvI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8lq-iM-M3n">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Uaw-0B-XAQ"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Back" id="4DL-AV-dIP">
+                                        <connections>
+                                            <action selector="XBackPressed:" destination="W0U-R0-Mv4" id="sa7-Bh-mmc"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.3678149287564767" green="0.3678149287564767" blue="0.3678149287564767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="8lq-iM-M3n" secondAttribute="trailing" id="6Fg-RV-H6g"/>
+                            <constraint firstItem="8lq-iM-M3n" firstAttribute="leading" secondItem="0Td-Da-gvI" secondAttribute="leading" id="jmh-VX-qfH"/>
+                            <constraint firstItem="8lq-iM-M3n" firstAttribute="top" secondItem="VTO-Ii-7tl" secondAttribute="top" constant="-44" id="oCF-Xd-SCn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VTO-Ii-7tl"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GYR-I8-n2p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="940" y="103"/>
         </scene>
         <!--Data View Controller-->
         <scene sceneID="rxy-Ho-x2t">

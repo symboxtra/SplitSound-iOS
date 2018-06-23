@@ -28,9 +28,18 @@ class DataViewController: UIViewController {
     @IBAction func XDismissPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+    @IBAction func SDismissPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     
-    //action for when the back button is pressed in the menu
+    //actions for when the back button is pressed in the menu
     @IBAction func BackPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    @IBAction func XBackPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    @IBAction func SBackPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
