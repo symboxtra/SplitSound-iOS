@@ -38,6 +38,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             storyboard = UIStoryboard(name: "OldAF", bundle: nil)
             self.window!.rootViewController = storyboard.instantiateInitialViewController()
         }
+        storyboard = UIStoryboard(name: "Cancer", bundle: nil)
+        self.window!.rootViewController = storyboard.instantiateInitialViewController()
         self.window!.rootViewController = storyboard.instantiateInitialViewController()
         
         self.window!.makeKeyAndVisible()

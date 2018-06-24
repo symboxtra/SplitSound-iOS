@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,18 +19,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIm-6M-hTG">
-                                <rect key="frame" x="100" y="319" width="175" height="175"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="175" id="Neu-pZ-oI4"/>
-                                    <constraint firstAttribute="width" constant="175" id="bHN-6o-Msg"/>
-                                </constraints>
-                                <state key="normal" image="Middle"/>
-                            </button>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cRB-WE-fXs">
                                 <rect key="frame" x="0.0" y="734" width="375" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="xN5-c8-ioN"/>
+                                    <constraint firstAttribute="height" constant="44" id="eLR-y7-q84"/>
                                 </constraints>
                                 <items>
                                     <barButtonItem title="Other Listeners" id="KM8-Nj-ouj">
@@ -42,7 +35,7 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gUD-Hr-PMb">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="2MD-VX-XEt"/>
+                                    <constraint firstAttribute="height" constant="70" id="FYs-Gw-bxW"/>
                                 </constraints>
                                 <items>
                                     <barButtonItem title="Menu" id="Ym2-f2-cvX">
@@ -52,17 +45,28 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIm-6M-hTG">
+                                <rect key="frame" x="100" y="319" width="175" height="175"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="175" id="GuK-pz-wep"/>
+                                    <constraint firstAttribute="height" constant="175" id="T4r-1Q-b7t"/>
+                                    <constraint firstAttribute="width" secondItem="HIm-6M-hTG" secondAttribute="height" multiplier="1:1" id="j6Y-We-zUy"/>
+                                </constraints>
+                                <state key="normal" image="Middle"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="gUD-Hr-PMb" firstAttribute="leading" secondItem="cRB-WE-fXs" secondAttribute="leading" id="1rR-1F-jTe"/>
-                            <constraint firstItem="gUD-Hr-PMb" firstAttribute="leading" secondItem="P0l-qT-V3V" secondAttribute="leading" id="RoT-8r-Dz5"/>
-                            <constraint firstItem="gUD-Hr-PMb" firstAttribute="trailing" secondItem="cRB-WE-fXs" secondAttribute="trailing" id="c3U-MD-lWB"/>
-                            <constraint firstItem="cRB-WE-fXs" firstAttribute="bottom" secondItem="Dbi-Oj-D8A" secondAttribute="bottom" id="jM0-oU-ahN"/>
-                            <constraint firstItem="HIm-6M-hTG" firstAttribute="centerY" secondItem="P0l-qT-V3V" secondAttribute="centerY" id="jhc-wI-f2z"/>
-                            <constraint firstItem="gUD-Hr-PMb" firstAttribute="top" secondItem="Dbi-Oj-D8A" secondAttribute="top" constant="-44" id="nag-gI-sdu"/>
-                            <constraint firstItem="HIm-6M-hTG" firstAttribute="centerX" secondItem="P0l-qT-V3V" secondAttribute="centerX" id="oQ3-2n-fYx"/>
-                            <constraint firstItem="gUD-Hr-PMb" firstAttribute="centerX" secondItem="HIm-6M-hTG" secondAttribute="centerX" id="xca-hl-26b"/>
+                            <constraint firstItem="gUD-Hr-PMb" firstAttribute="leading" secondItem="P0l-qT-V3V" secondAttribute="leading" id="0Df-rP-N1x"/>
+                            <constraint firstItem="gUD-Hr-PMb" firstAttribute="leading" secondItem="cRB-WE-fXs" secondAttribute="leading" id="7sS-CJ-ghQ"/>
+                            <constraint firstItem="HIm-6M-hTG" firstAttribute="centerX" secondItem="P0l-qT-V3V" secondAttribute="centerX" id="GZw-f5-Uz2"/>
+                            <constraint firstItem="cRB-WE-fXs" firstAttribute="centerX" secondItem="HIm-6M-hTG" secondAttribute="centerX" id="NsL-6H-7wO"/>
+                            <constraint firstItem="HIm-6M-hTG" firstAttribute="leading" secondItem="Dbi-Oj-D8A" secondAttribute="leading" constant="100" id="XVa-zh-hR5"/>
+                            <constraint firstItem="HIm-6M-hTG" firstAttribute="centerY" secondItem="P0l-qT-V3V" secondAttribute="centerY" id="XaH-El-qaG"/>
+                            <constraint firstItem="cRB-WE-fXs" firstAttribute="bottom" secondItem="Dbi-Oj-D8A" secondAttribute="bottom" id="di9-Ae-JbT"/>
+                            <constraint firstItem="gUD-Hr-PMb" firstAttribute="top" secondItem="P0l-qT-V3V" secondAttribute="top" id="hPc-nd-Qem"/>
+                            <constraint firstItem="gUD-Hr-PMb" firstAttribute="trailing" secondItem="cRB-WE-fXs" secondAttribute="trailing" id="u6a-hd-GMD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Dbi-Oj-D8A"/>
                     </view>
@@ -114,14 +118,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nn7-pJ-bmb">
-                                <rect key="frame" x="16" y="44" width="343" height="659"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nn7-pJ-bmb">
+                                <rect key="frame" x="20" y="44" width="334" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="6KV-cp-PQv"/>
+                                </constraints>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6PG-k1-8ah">
-                                <rect key="frame" x="16" y="711" width="81" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6PG-k1-8ah">
+                                <rect key="frame" x="20" y="653" width="54" height="30"/>
                                 <state key="normal" title="Dismiss"/>
                                 <connections>
                                     <action selector="XDismissPressed:" destination="gFk-6d-Q5v" eventType="touchUpInside" id="YXG-WS-Wxl"/>
@@ -129,6 +134,13 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6PG-k1-8ah" firstAttribute="leading" secondItem="nn7-pJ-bmb" secondAttribute="leading" id="7Ff-Vo-wYh"/>
+                            <constraint firstItem="nn7-pJ-bmb" firstAttribute="top" secondItem="1oe-7z-WWw" secondAttribute="top" id="8q7-aA-rw2"/>
+                            <constraint firstItem="nn7-pJ-bmb" firstAttribute="leading" secondItem="1oe-7z-WWw" secondAttribute="leading" constant="20" id="I70-TL-Auz"/>
+                            <constraint firstItem="nn7-pJ-bmb" firstAttribute="centerX" secondItem="10S-8t-3Rd" secondAttribute="centerX" id="U2j-Kg-6aU"/>
+                            <constraint firstItem="6PG-k1-8ah" firstAttribute="top" secondItem="nn7-pJ-bmb" secondAttribute="bottom" constant="559" id="c4D-G7-Cmh"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="1oe-7z-WWw"/>
                     </view>
                 </viewController>
