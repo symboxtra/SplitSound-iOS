@@ -12,34 +12,38 @@ class DataViewController: UIViewController {
     @IBOutlet weak var dataLabel: UILabel!
     var dataObject: String = ""
     
+    //outlets for drawer and its leading constraint
+    var drawerShowing = false
+    @IBOutlet weak var drawerLeading: NSLayoutConstraint!
+    @IBOutlet weak var drawer: UIView!
+    
     override func viewDidLoad() {
     super.viewDidLoad()
+        //drawerLeading.constant = -206
         //var instanceOfRTPSession: RTPSession = RTPSession();
         
         //let Object = OCPPClass()
         //TestText.text = Object.printFromCPP()
     }
-
+    
+    //action for when menu button is pressed
+    @IBAction func MenuPressed(_ sender: Any) {
+        if(!drawerShowing) {
+            drawerLeading.constant = 0
+        } else {
+            drawerLeading.constant = -206
+        }
+        drawerShowing = !drawerShowing
+    }
+    
     //actions to take away table when the dismiss button is pressed
     @IBAction func DismissPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func XDismissPressed(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
-    @IBAction func SDismissPressed(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
     
     //actions for when the back button is pressed in the menu
     @IBAction func BackPressed(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
-    @IBAction func XBackPressed(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
-    @IBAction func SBackPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
