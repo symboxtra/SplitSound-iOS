@@ -14,12 +14,15 @@ class DataViewController: UIViewController {
     
     //outlets for drawer and its leading constraint
     var drawerShowing = false
-    @IBOutlet weak var drawerLeading: NSLayoutConstraint!
     @IBOutlet weak var drawer: UIView!
+    @IBOutlet weak var drawerLeading: NSLayoutConstraint!
+    
+    //@IBOutlet weak var drawerLeading: NSLayoutConstraint!
+    //@IBOutlet weak var drawer: UIView!
     
     override func viewDidLoad() {
     super.viewDidLoad()
-        //drawerLeading.constant = -206
+        drawerLeading.constant = -240
         //var instanceOfRTPSession: RTPSession = RTPSession();
         
         //let Object = OCPPClass()
@@ -30,8 +33,10 @@ class DataViewController: UIViewController {
     @IBAction func MenuPressed(_ sender: Any) {
         if(!drawerShowing) {
             drawerLeading.constant = 0
+            UIView.animate(withDuration: 0.3, animations: {self.view.layoutIfNeeded()})
         } else {
-            drawerLeading.constant = -206
+            drawerLeading.constant = -240
+            UIView.animate(withDuration: 0.3, animations: {self.view.layoutIfNeeded()})
         }
         drawerShowing = !drawerShowing
     }

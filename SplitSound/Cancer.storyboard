@@ -42,11 +42,7 @@
                                     <constraint firstAttribute="height" constant="44" id="eLR-y7-q84"/>
                                 </constraints>
                                 <items>
-                                    <barButtonItem title="Other Listeners" id="KM8-Nj-ouj">
-                                        <connections>
-                                            <segue destination="gFk-6d-Q5v" kind="presentation" id="dH9-eu-14c"/>
-                                        </connections>
-                                    </barButtonItem>
+                                    <barButtonItem title="Other Listeners" id="KM8-Nj-ouj"/>
                                 </items>
                             </toolbar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIm-6M-hTG">
@@ -62,29 +58,11 @@
                                 <rect key="frame" x="0.0" y="34" width="375" height="44"/>
                                 <items/>
                             </toolbar>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K5f-Fr-ZBK">
-                                <rect key="frame" x="0.0" y="36" width="375" height="0.0"/>
-                                <color key="backgroundColor" red="0.79607843137254897" green="0.79607843137254897" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gZS-wk-DI2">
-                                <rect key="frame" x="0.0" y="78" width="206" height="734"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qFu-8e-OwP">
-                                        <rect key="frame" x="8" y="18" width="71" height="69"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Settings">
-                                            <color key="titleColor" red="0.74005721084812137" green="0.45824238435224707" blue="0.31751342695829593" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="W0U-R0-Mv4" kind="show" id="O9B-hX-fwK"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.2481177137305699" green="0.2481177137305699" blue="0.2481177137305699" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iug-CA-K0T">
+                                <rect key="frame" x="0.0" y="88" width="240" height="724"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="gZS-wk-DI2" secondAttribute="height" multiplier="103:367" id="9YH-yV-Ne7"/>
-                                    <constraint firstAttribute="height" constant="734" id="Kh8-v0-piM"/>
-                                    <constraint firstAttribute="width" constant="206" id="ixA-Of-zuo"/>
+                                    <constraint firstAttribute="width" constant="240" id="5Ze-MH-Swp"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -92,23 +70,17 @@
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="gUD-Hr-PMb" firstAttribute="leading" secondItem="P0l-qT-V3V" secondAttribute="leading" id="0Df-rP-N1x"/>
-                            <constraint firstItem="K5f-Fr-ZBK" firstAttribute="trailing" secondItem="gUD-Hr-PMb" secondAttribute="trailing" id="6eQ-qu-Daw"/>
                             <constraint firstItem="gUD-Hr-PMb" firstAttribute="leading" secondItem="cRB-WE-fXs" secondAttribute="leading" id="7sS-CJ-ghQ"/>
-                            <constraint firstItem="gZS-wk-DI2" firstAttribute="top" secondItem="K5f-Fr-ZBK" secondAttribute="bottom" constant="42" id="B0X-hB-ef8"/>
+                            <constraint firstItem="gUD-Hr-PMb" firstAttribute="top" secondItem="P0l-qT-V3V" secondAttribute="topMargin" constant="-54" id="CtS-XF-C6A"/>
                             <constraint firstItem="HIm-6M-hTG" firstAttribute="centerX" secondItem="P0l-qT-V3V" secondAttribute="centerX" id="GZw-f5-Uz2"/>
-                            <constraint firstAttribute="bottom" secondItem="gZS-wk-DI2" secondAttribute="bottom" id="LkN-tO-tfO"/>
                             <constraint firstItem="cRB-WE-fXs" firstAttribute="centerX" secondItem="HIm-6M-hTG" secondAttribute="centerX" id="NsL-6H-7wO"/>
-                            <constraint firstItem="gZS-wk-DI2" firstAttribute="leading" secondItem="Dbi-Oj-D8A" secondAttribute="leading" id="TaU-Ju-Fjx"/>
+                            <constraint firstAttribute="bottom" secondItem="Iug-CA-K0T" secondAttribute="bottom" id="VCM-p1-C0o"/>
                             <constraint firstItem="HIm-6M-hTG" firstAttribute="leading" secondItem="Dbi-Oj-D8A" secondAttribute="leading" constant="100" id="XVa-zh-hR5"/>
                             <constraint firstItem="HIm-6M-hTG" firstAttribute="centerY" secondItem="P0l-qT-V3V" secondAttribute="centerY" id="XaH-El-qaG"/>
-                            <constraint firstAttribute="bottom" secondItem="gZS-wk-DI2" secondAttribute="bottom" id="YY0-A4-R9c"/>
-                            <constraint firstItem="K5f-Fr-ZBK" firstAttribute="top" secondItem="P0l-qT-V3V" secondAttribute="topMargin" constant="-52" id="ZqS-5e-6zQ"/>
-                            <constraint firstItem="gZS-wk-DI2" firstAttribute="top" secondItem="gUD-Hr-PMb" secondAttribute="bottom" id="afn-M8-LqX"/>
-                            <constraint firstItem="gZS-wk-DI2" firstAttribute="top" secondItem="gUD-Hr-PMb" secondAttribute="bottom" id="crx-Yz-I0I"/>
                             <constraint firstItem="cRB-WE-fXs" firstAttribute="bottom" secondItem="Dbi-Oj-D8A" secondAttribute="bottom" id="di9-Ae-JbT"/>
-                            <constraint firstItem="Dbi-Oj-D8A" firstAttribute="trailing" secondItem="gZS-wk-DI2" secondAttribute="trailing" constant="169" id="maS-8z-DSO"/>
+                            <constraint firstItem="Iug-CA-K0T" firstAttribute="leading" secondItem="Dbi-Oj-D8A" secondAttribute="leading" id="h9h-AL-g6T"/>
+                            <constraint firstItem="Iug-CA-K0T" firstAttribute="top" secondItem="Dbi-Oj-D8A" secondAttribute="top" id="p7W-3I-fZ9"/>
                             <constraint firstItem="gUD-Hr-PMb" firstAttribute="trailing" secondItem="cRB-WE-fXs" secondAttribute="trailing" id="u6a-hd-GMD"/>
-                            <constraint firstItem="gZS-wk-DI2" firstAttribute="leading" secondItem="K5f-Fr-ZBK" secondAttribute="leading" id="u8r-U4-tVF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Dbi-Oj-D8A"/>
                     </view>
@@ -120,8 +92,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="drawer" destination="gZS-wk-DI2" id="YO9-d5-ya7"/>
-                        <outlet property="drawerLeading" destination="u8r-U4-tVF" id="hC1-RF-VkC"/>
+                        <outlet property="drawer" destination="Iug-CA-K0T" id="cGT-h5-7IL"/>
+                        <outlet property="drawerLeading" destination="h9h-AL-g6T" id="hYC-sG-7WO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4jl-jf-A8i" userLabel="First Responder" sceneMemberID="firstResponder"/>
