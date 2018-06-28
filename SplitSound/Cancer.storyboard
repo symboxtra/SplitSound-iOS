@@ -42,7 +42,11 @@
                                     <constraint firstAttribute="height" constant="44" id="eLR-y7-q84"/>
                                 </constraints>
                                 <items>
-                                    <barButtonItem title="Other Listeners" id="KM8-Nj-ouj"/>
+                                    <barButtonItem title="Other Listeners" id="KM8-Nj-ouj">
+                                        <connections>
+                                            <segue destination="gFk-6d-Q5v" kind="show" id="kpy-JZ-nv2"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIm-6M-hTG">
@@ -60,7 +64,19 @@
                             </toolbar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iug-CA-K0T">
                                 <rect key="frame" x="0.0" y="88" width="240" height="724"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHw-KS-5PK">
+                                        <rect key="frame" x="8" y="8" width="80" height="63"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Settings">
+                                            <color key="titleColor" red="0.71372549019607845" green="0.396078431372549" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="W0U-R0-Mv4" kind="show" id="Naa-xD-tuW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.33618037564766834" green="0.33618037564766834" blue="0.33618037564766834" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="5Ze-MH-Swp"/>
                                 </constraints>
@@ -100,10 +116,10 @@
             </objects>
             <point key="canvasLocation" x="64.799999999999997" y="103.44827586206897"/>
         </scene>
-        <!--Data View Controller-->
+        <!--View Controller-->
         <scene sceneID="TIi-3a-uPK">
             <objects>
-                <viewController modalTransitionStyle="flipHorizontal" id="W0U-R0-Mv4" customClass="DataViewController" customModule="SplitSound" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" id="W0U-R0-Mv4" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Td-Da-gvI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -115,36 +131,27 @@
             </objects>
             <point key="canvasLocation" x="940" y="103"/>
         </scene>
-        <!--Data View Controller-->
+        <!--View Controller-->
         <scene sceneID="rxy-Ho-x2t">
             <objects>
-                <viewController id="gFk-6d-Q5v" customClass="DataViewController" customModule="SplitSound" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" id="gFk-6d-Q5v" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="10S-8t-3Rd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nn7-pJ-bmb">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="629"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="629" id="6KV-cp-PQv"/>
+                                    <constraint firstAttribute="height" constant="724" id="6KV-cp-PQv"/>
                                 </constraints>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6PG-k1-8ah">
-                                <rect key="frame" x="20" y="653" width="54" height="30"/>
-                                <state key="normal" title="Dismiss"/>
-                                <connections>
-                                    <action selector="XDismissPressed:" destination="gFk-6d-Q5v" eventType="touchUpInside" id="YXG-WS-Wxl"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="6PG-k1-8ah" firstAttribute="leading" secondItem="nn7-pJ-bmb" secondAttribute="leading" constant="20" id="7Ff-Vo-wYh"/>
-                            <constraint firstItem="nn7-pJ-bmb" firstAttribute="top" secondItem="1oe-7z-WWw" secondAttribute="top" constant="-44" id="8q7-aA-rw2"/>
+                            <constraint firstItem="nn7-pJ-bmb" firstAttribute="top" secondItem="1oe-7z-WWw" secondAttribute="top" id="8q7-aA-rw2"/>
                             <constraint firstItem="nn7-pJ-bmb" firstAttribute="leading" secondItem="1oe-7z-WWw" secondAttribute="leading" id="I70-TL-Auz"/>
                             <constraint firstItem="nn7-pJ-bmb" firstAttribute="centerX" secondItem="10S-8t-3Rd" secondAttribute="centerX" id="U2j-Kg-6aU"/>
-                            <constraint firstItem="6PG-k1-8ah" firstAttribute="top" secondItem="nn7-pJ-bmb" secondAttribute="bottom" constant="24" id="c4D-G7-Cmh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1oe-7z-WWw"/>
                     </view>

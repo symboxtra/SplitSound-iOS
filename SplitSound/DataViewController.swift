@@ -12,6 +12,9 @@ class DataViewController: UIViewController {
     @IBOutlet weak var dataLabel: UILabel!
     var dataObject: String = ""
     
+    //boolean that represents whether or not the home screen is being loaded for the first time
+    var firstOpen = false
+    
     //outlets for drawer and its leading constraint
     var drawerShowing = false
     @IBOutlet weak var drawer: UIView!
@@ -22,7 +25,13 @@ class DataViewController: UIViewController {
     
     override func viewDidLoad() {
     super.viewDidLoad()
-        drawerLeading.constant = -240
+        
+        //move drawer if the app is being opened
+        if(!firstOpen) {
+            drawerLeading.constant = -240
+            firstOpen = true
+        }
+        
         //var instanceOfRTPSession: RTPSession = RTPSession();
         
         //let Object = OCPPClass()
