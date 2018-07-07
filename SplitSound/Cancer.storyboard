@@ -132,9 +132,12 @@
                             <constraint firstItem="gUD-Hr-PMb" firstAttribute="trailing" secondItem="cRB-WE-fXs" secondAttribute="trailing" id="u6a-hd-GMD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Dbi-Oj-D8A"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="6rY-9F-nyk" appends="YES" id="9xA-Bs-B4t"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="wBi-c5-Nvn">
-                        <barButtonItem key="leftBarButtonItem" systemItem="organize" id="AMh-L9-wcc">
+                        <barButtonItem key="leftBarButtonItem" image="baseline_menu_white_48pt" id="AMh-L9-wcc">
                             <connections>
                                 <action selector="MenuPressed:" destination="gu5-Bg-68n" id="wI3-fs-MSl"/>
                             </connections>
@@ -146,6 +149,12 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4jl-jf-A8i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="6rY-9F-nyk">
+                    <rectEdge key="edges" left="YES"/>
+                    <connections>
+                        <action selector="EdgeSwipe:" destination="gu5-Bg-68n" id="8SZ-1u-WYL"/>
+                    </connections>
+                </screenEdgePanGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="64.799999999999997" y="103.44827586206897"/>
         </scene>
@@ -172,19 +181,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nn7-pJ-bmb">
-                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0hc-bh-AfD">
+                                <rect key="frame" x="16" y="88" width="343" height="690"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="724" id="6KV-cp-PQv"/>
-                                </constraints>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="nn7-pJ-bmb" firstAttribute="top" secondItem="1oe-7z-WWw" secondAttribute="top" id="8q7-aA-rw2"/>
-                            <constraint firstItem="nn7-pJ-bmb" firstAttribute="leading" secondItem="1oe-7z-WWw" secondAttribute="leading" id="I70-TL-Auz"/>
-                            <constraint firstItem="nn7-pJ-bmb" firstAttribute="centerX" secondItem="10S-8t-3Rd" secondAttribute="centerX" id="U2j-Kg-6aU"/>
+                            <constraint firstItem="0hc-bh-AfD" firstAttribute="bottom" secondItem="1oe-7z-WWw" secondAttribute="bottom" id="51t-uI-1cp"/>
+                            <constraint firstItem="0hc-bh-AfD" firstAttribute="leading" secondItem="1oe-7z-WWw" secondAttribute="leading" constant="16" id="7ag-s6-mLh"/>
+                            <constraint firstItem="0hc-bh-AfD" firstAttribute="top" secondItem="1oe-7z-WWw" secondAttribute="top" id="CTT-cy-uFS"/>
+                            <constraint firstItem="0hc-bh-AfD" firstAttribute="bottom" secondItem="1oe-7z-WWw" secondAttribute="bottom" id="Ccv-in-LFQ"/>
+                            <constraint firstItem="1oe-7z-WWw" firstAttribute="trailing" secondItem="0hc-bh-AfD" secondAttribute="trailing" constant="16" id="FoX-ba-JVz"/>
+                            <constraint firstItem="0hc-bh-AfD" firstAttribute="top" secondItem="1oe-7z-WWw" secondAttribute="top" id="PPf-eX-kyc"/>
+                            <constraint firstItem="0hc-bh-AfD" firstAttribute="trailing" secondItem="10S-8t-3Rd" secondAttribute="trailingMargin" id="TEW-xc-lY7"/>
+                            <constraint firstItem="0hc-bh-AfD" firstAttribute="leading" secondItem="10S-8t-3Rd" secondAttribute="leadingMargin" id="p6T-ll-3mp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1oe-7z-WWw"/>
                     </view>
@@ -196,5 +207,6 @@
     </scenes>
     <resources>
         <image name="Middle" width="4739" height="4750"/>
+        <image name="baseline_menu_white_48pt" width="48" height="48"/>
     </resources>
 </document>

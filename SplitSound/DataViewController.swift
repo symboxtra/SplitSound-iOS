@@ -50,6 +50,17 @@ class DataViewController: UIViewController {
         drawerShowing = !drawerShowing
     }
     
+    //edge swipe action for menu
+    @IBAction func EdgeSwipe(_ sender: Any) {
+        if((sender as AnyObject).state == .ended) {
+        if(!drawerShowing) {
+            drawerLeading.constant = 0
+            UIView.animate(withDuration: 0.3, animations: {self.view.layoutIfNeeded()})
+        }
+        drawerShowing = !drawerShowing
+        }
+    }
+    
     //actions to take away table when the dismiss button is pressed
     @IBAction func DismissPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
