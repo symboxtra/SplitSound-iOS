@@ -22,22 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //instantiate UIWindow
         self.window = UIWindow(frame: UIScreen.main.bounds)
         
-        //get model name
-        let modelName = UIDevice.modelName
-        print(modelName)
-        
-        //set the correct story board
-        if(modelName.range(of: "8") != nil) {
-            storyboard = UIStoryboard(name: "Phone6-8", bundle: nil)
-            self.window!.rootViewController = storyboard.instantiateInitialViewController()
-        } else if(modelName.range(of: "X") != nil){
-            storyboard = UIStoryboard(name: "Cancer", bundle: nil)
-            self.window!.rootViewController = storyboard.instantiateInitialViewController()
-        }
-        else {
-            storyboard = UIStoryboard(name: "OldAF", bundle: nil)
-            self.window!.rootViewController = storyboard.instantiateInitialViewController()
-        }
+        //assign storyboard
         storyboard = UIStoryboard(name: "Cancer", bundle: nil)
         self.window!.rootViewController = storyboard.instantiateInitialViewController()
         self.window!.rootViewController = storyboard.instantiateInitialViewController()
