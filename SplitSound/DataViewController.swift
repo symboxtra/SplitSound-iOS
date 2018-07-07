@@ -31,7 +31,8 @@ class DataViewController: UIViewController {
             drawerLeading.constant = -240
             firstOpen = true
         }
-        
+        drawer.layer.shadowRadius = 3
+        drawer.layer.shadowOpacity = 50
         //var instanceOfRTPSession: RTPSession = RTPSession();
         
         //let Object = OCPPClass()
