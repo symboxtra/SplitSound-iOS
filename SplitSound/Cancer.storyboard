@@ -20,6 +20,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="G9K-6D-pgr">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.74117647058823533" green="0.45882352941176469" blue="0.32156862745098042" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="gu5-Bg-68n" kind="relationship" relationship="rootViewController" id="pOw-95-AF7"/>
@@ -44,6 +45,7 @@
                                 </constraints>
                                 <items>
                                     <barButtonItem title="Other Listeners" id="KM8-Nj-ouj">
+                                        <color key="tintColor" red="0.70152652260000004" green="0.4718520967" blue="0.35506726799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <connections>
                                             <segue destination="gFk-6d-Q5v" kind="presentation" id="aEz-Tu-M3Q"/>
                                         </connections>
@@ -152,6 +154,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="wBi-c5-Nvn">
                         <barButtonItem key="leftBarButtonItem" image="baseline_menu_white_48pt" id="AMh-L9-wcc">
+                            <color key="tintColor" red="0.74005721079999998" green="0.45824238439999998" blue="0.31751342700000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <connections>
                                 <action selector="MenuPressed:" destination="gu5-Bg-68n" id="wI3-fs-MSl"/>
                             </connections>
@@ -204,6 +207,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem title="Dismiss" id="0zy-qj-peT">
+                                        <color key="tintColor" red="0.70152652263641357" green="0.47185209673748008" blue="0.35506726801508659" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <connections>
                                             <action selector="DismissPressed:" destination="gFk-6d-Q5v" id="j2V-8n-yaz"/>
                                         </connections>
