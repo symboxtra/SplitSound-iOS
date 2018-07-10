@@ -150,6 +150,7 @@
                         <viewLayoutGuide key="safeArea" id="Dbi-Oj-D8A"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="6rY-9F-nyk" appends="YES" id="9xA-Bs-B4t"/>
+                            <outletCollection property="gestureRecognizers" destination="vM9-Ub-XXV" appends="YES" id="mrB-E6-QWq"/>
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" id="wBi-c5-Nvn">
@@ -172,6 +173,11 @@
                         <action selector="EdgeSwipe:" destination="gu5-Bg-68n" id="8SZ-1u-WYL"/>
                     </connections>
                 </screenEdgePanGestureRecognizer>
+                <tapGestureRecognizer id="vM9-Ub-XXV">
+                    <connections>
+                        <action selector="ScreenTapped:" destination="gu5-Bg-68n" id="Q7x-bA-tfL"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="64.799999999999997" y="103.44827586206897"/>
         </scene>
@@ -199,12 +205,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0hc-bh-AfD">
-                                <rect key="frame" x="16" y="44" width="343" height="690"/>
+                                <rect key="frame" x="16" y="44" width="343" height="70"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JZc-Yf-dxz">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JZc-Yf-dxz">
                                 <rect key="frame" x="0.0" y="734" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="JZc-Yf-dxz" secondAttribute="height" multiplier="375:44" id="je5-sa-g1b"/>
+                                </constraints>
                                 <items>
                                     <barButtonItem title="Dismiss" id="0zy-qj-peT">
                                         <color key="tintColor" red="0.70152652263641357" green="0.47185209673748008" blue="0.35506726801508659" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -217,14 +225,21 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="0hc-bh-AfD" firstAttribute="bottom" secondItem="1oe-7z-WWw" secondAttribute="bottom" constant="-44" id="51t-uI-1cp"/>
+                            <constraint firstItem="0hc-bh-AfD" firstAttribute="bottom" secondItem="1oe-7z-WWw" secondAttribute="bottom" constant="-664" id="51t-uI-1cp"/>
                             <constraint firstItem="0hc-bh-AfD" firstAttribute="leading" secondItem="1oe-7z-WWw" secondAttribute="leading" constant="16" id="7ag-s6-mLh"/>
+                            <constraint firstItem="JZc-Yf-dxz" firstAttribute="bottom" secondItem="1oe-7z-WWw" secondAttribute="bottom" id="BSq-jf-GPW"/>
                             <constraint firstItem="0hc-bh-AfD" firstAttribute="top" secondItem="1oe-7z-WWw" secondAttribute="top" id="CTT-cy-uFS"/>
-                            <constraint firstItem="0hc-bh-AfD" firstAttribute="bottom" secondItem="1oe-7z-WWw" secondAttribute="bottom" constant="-44" id="Ccv-in-LFQ"/>
+                            <constraint firstItem="0hc-bh-AfD" firstAttribute="bottom" secondItem="1oe-7z-WWw" secondAttribute="bottom" constant="-664" id="Ccv-in-LFQ"/>
                             <constraint firstItem="1oe-7z-WWw" firstAttribute="trailing" secondItem="0hc-bh-AfD" secondAttribute="trailing" constant="16" id="FoX-ba-JVz"/>
+                            <constraint firstItem="JZc-Yf-dxz" firstAttribute="centerX" secondItem="0hc-bh-AfD" secondAttribute="centerX" id="HpO-LO-5R5"/>
+                            <constraint firstItem="JZc-Yf-dxz" firstAttribute="top" secondItem="0hc-bh-AfD" secondAttribute="bottom" constant="620" id="Ht3-hU-gVG"/>
                             <constraint firstItem="0hc-bh-AfD" firstAttribute="top" secondItem="1oe-7z-WWw" secondAttribute="top" id="PPf-eX-kyc"/>
+                            <constraint firstItem="JZc-Yf-dxz" firstAttribute="leading" secondItem="10S-8t-3Rd" secondAttribute="leading" id="QHa-vO-HBs"/>
                             <constraint firstItem="0hc-bh-AfD" firstAttribute="trailing" secondItem="10S-8t-3Rd" secondAttribute="trailingMargin" id="TEW-xc-lY7"/>
+                            <constraint firstItem="JZc-Yf-dxz" firstAttribute="bottom" secondItem="1oe-7z-WWw" secondAttribute="bottom" id="Wir-rI-R1b"/>
+                            <constraint firstItem="JZc-Yf-dxz" firstAttribute="leading" secondItem="1oe-7z-WWw" secondAttribute="leading" id="dtH-iJ-SOb"/>
                             <constraint firstItem="0hc-bh-AfD" firstAttribute="leading" secondItem="10S-8t-3Rd" secondAttribute="leadingMargin" id="p6T-ll-3mp"/>
+                            <constraint firstItem="JZc-Yf-dxz" firstAttribute="top" secondItem="0hc-bh-AfD" secondAttribute="bottom" constant="620" id="yja-0R-kGb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1oe-7z-WWw"/>
                     </view>
