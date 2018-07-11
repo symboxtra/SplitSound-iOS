@@ -83,11 +83,11 @@ class DataViewController: UIViewController {
     //adds blur to screen
     func blureffect() {
         let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.dark)
-        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        let blurEffectView = UIVisualEffectView()
         blurEffectView.frame = self.view.bounds
         blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         self.view.insertSubview(blurEffectView, at: 6)
-        //self.view.sendSubview(toBack: blurEffectView)
+        UIView.animate(withDuration: 0.3, animations: {blurEffectView.effect = blurEffect})
     }
     
     //removes blur from screen
@@ -95,6 +95,7 @@ class DataViewController: UIViewController {
         //search for visual effect view
         for subview in self.view.subviews {
             if subview is UIVisualEffectView {
+                UIView.animate(withDuration: 0.3, animations: {(subview as! UIVisualEffectView).effect = nil})
                 subview.removeFromSuperview()
             }
         }
