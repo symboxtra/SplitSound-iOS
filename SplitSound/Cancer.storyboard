@@ -218,19 +218,12 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zkq-Rf-DJD">
-                                <rect key="frame" x="10" y="704" width="58" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Example"/>
-                                <connections>
-                                    <action selector="Resize:" destination="gFk-6d-Q5v" eventType="touchUpInside" id="JOE-WF-fJc"/>
-                                </connections>
-                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RvU-sp-7w8">
-                                <rect key="frame" x="16" y="44" width="343" height="70"/>
+                                <rect key="frame" x="16" y="44" width="343" height="652"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="Lm5-7o-uLy"/>
+                                    <constraint firstAttribute="width" secondItem="RvU-sp-7w8" secondAttribute="height" multiplier="343:652" id="4c9-2e-XuM"/>
+                                    <constraint firstAttribute="height" constant="652" id="Lm5-7o-uLy"/>
                                 </constraints>
                             </tableView>
                         </subviews>
