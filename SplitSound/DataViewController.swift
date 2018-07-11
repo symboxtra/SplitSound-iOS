@@ -22,7 +22,6 @@ class DataViewController: UIViewController {
     
     override func viewDidLoad() {
     super.viewDidLoad()
-        
         //move drawer if the app is being opened
         if(!firstOpen) {
             drawerLeading.constant = -240
@@ -40,10 +39,13 @@ class DataViewController: UIViewController {
     @IBAction func MenuPressed(_ sender: Any) {
         if(!drawerShowing) {
             drawerLeading.constant = 0
+            blureffect()
             UIView.animate(withDuration: 0.3, animations: {self.view.layoutIfNeeded()})
         } else {
             drawerLeading.constant = -240
+            removeBlur()
             UIView.animate(withDuration: 0.3, animations: {self.view.layoutIfNeeded()})
+            
         }
         drawerShowing = !drawerShowing
     }
@@ -54,6 +56,7 @@ class DataViewController: UIViewController {
         if(!drawerShowing) {
             drawerLeading.constant = 0
             UIView.animate(withDuration: 0.3, animations: {self.view.layoutIfNeeded()})
+            blureffect()
         }
         drawerShowing = !drawerShowing
         }
@@ -68,22 +71,33 @@ class DataViewController: UIViewController {
         
         //drawer is taken off of the screen if it is out
         drawerLeading.constant = -240
+        removeBlur()
         UIView.animate(withDuration: 0.3, animations: {self.view.layoutIfNeeded()})
+
         
         //update drawerShowing
         drawerShowing = !drawerShowing
         
     }
     
-    //actions to take away table when the dismiss button is pressed
-    @IBAction func DismissPressed(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+    //adds blur to screen
+    func blureffect() {
+        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.dark)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        blurEffectView.frame = self.view.bounds
+        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        self.view.insertSubview(blurEffectView, at: 6)
+        //self.view.sendSubview(toBack: blurEffectView)
     }
     
-    
-    //actions for when the back button is pressed in the menu
-    @IBAction func BackPressed(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+    //removes blur from screen
+    func removeBlur() {
+        //search for visual effect view
+        for subview in self.view.subviews {
+            if subview is UIVisualEffectView {
+                subview.removeFromSuperview()
+            }
+        }
     }
     
     override func didReceiveMemoryWarning() {
