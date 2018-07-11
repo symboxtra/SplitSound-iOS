@@ -228,16 +228,6 @@
                                 <color key="tintColor" red="0.70152652260000004" green="0.4718520967" blue="0.35506726799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="onTintColor" red="0.73333333333333328" green="0.33356387028401385" blue="0.19525951700356242" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </switch>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QzZ-kE-ie0">
-                                <rect key="frame" x="16" y="115" width="94" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="QzZ-kE-ie0" secondAttribute="height" multiplier="94:31" id="3sw-xe-C7v"/>
-                                    <constraint firstAttribute="width" constant="94" id="Jmw-kF-Kq9"/>
-                                </constraints>
-                                <state key="normal" title="Ad Revenue">
-                                    <color key="titleColor" red="0.73711814550949906" green="0.33528542928098648" blue="0.19626727236374514" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="XCW-Fh-OSX">
                                 <rect key="frame" x="14" y="212" width="347" height="30"/>
                                 <constraints>
@@ -245,33 +235,41 @@
                                 </constraints>
                                 <color key="minimumTrackTintColor" red="0.73588352763385145" green="0.33472385121245535" blue="0.1959385393318139" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </slider>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FSw-iC-BWp">
-                                <rect key="frame" x="16" y="174" width="203" height="30"/>
-                                <state key="normal" title="Idk but i needed something ">
-                                    <color key="titleColor" red="0.69701786802804011" green="0.30647593214506513" blue="0.20006398523680605" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="fEB-VS-4zy">
                                 <rect key="frame" x="265" y="260" width="94" height="29"/>
+                                <color key="tintColor" red="0.5607843137254902" green="0.23529411764705882" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ad Revenue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c5r-kT-QTB">
+                                <rect key="frame" x="16" y="125" width="132" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.7640636111957736" green="0.33385011203119985" blue="0.20810730171815786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Much UI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndQ-e5-wrN">
+                                <rect key="frame" x="16" y="183" width="90" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.72549019607843135" green="0.29019607843137257" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Never seen this thing before" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xE4-gD-ZzS">
+                                <rect key="frame" x="16" y="268" width="229" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.72549019609999998" green="0.2901960784" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.14256642694506208" green="0.14171273576575033" blue="0.14342011812437383" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="XCW-Fh-OSX" firstAttribute="leading" secondItem="FSw-iC-BWp" secondAttribute="leading" id="1lm-dI-rG0"/>
                             <constraint firstItem="HlI-Kf-9nh" firstAttribute="top" secondItem="VTO-Ii-7tl" secondAttribute="top" constant="27" id="4SD-1d-SEK"/>
                             <constraint firstItem="XCW-Fh-OSX" firstAttribute="trailing" secondItem="0Td-Da-gvI" secondAttribute="trailingMargin" id="5Xr-xW-eTU"/>
                             <constraint firstItem="VTO-Ii-7tl" firstAttribute="bottom" secondItem="HlI-Kf-9nh" secondAttribute="bottom" constant="632" id="6kZ-ez-WgA"/>
+                            <constraint firstItem="XCW-Fh-OSX" firstAttribute="leading" secondItem="0Td-Da-gvI" secondAttribute="leadingMargin" id="8eH-qq-RWy"/>
                             <constraint firstItem="XCW-Fh-OSX" firstAttribute="top" secondItem="HlI-Kf-9nh" secondAttribute="bottom" constant="66" id="9AD-LV-Nnx"/>
-                            <constraint firstItem="QzZ-kE-ie0" firstAttribute="leading" secondItem="VTO-Ii-7tl" secondAttribute="leading" constant="16" id="JPz-o6-dMZ"/>
-                            <constraint firstItem="VTO-Ii-7tl" firstAttribute="bottom" secondItem="QzZ-kE-ie0" secondAttribute="bottom" constant="632" id="NFa-gI-VEr"/>
-                            <constraint firstItem="XCW-Fh-OSX" firstAttribute="leading" secondItem="QzZ-kE-ie0" secondAttribute="leading" id="QNn-1k-zPF"/>
-                            <constraint firstItem="QzZ-kE-ie0" firstAttribute="leading" secondItem="0Td-Da-gvI" secondAttribute="leadingMargin" id="WwM-kX-FEa"/>
-                            <constraint firstItem="XCW-Fh-OSX" firstAttribute="top" secondItem="FSw-iC-BWp" secondAttribute="bottom" constant="8" symbolic="YES" id="a9e-Si-sIM"/>
                             <constraint firstItem="XCW-Fh-OSX" firstAttribute="trailing" secondItem="fEB-VS-4zy" secondAttribute="trailing" id="aJs-SF-P3z"/>
-                            <constraint firstItem="HlI-Kf-9nh" firstAttribute="bottom" secondItem="QzZ-kE-ie0" secondAttribute="bottom" id="dAP-k5-MTu"/>
                             <constraint firstItem="VTO-Ii-7tl" firstAttribute="trailing" secondItem="HlI-Kf-9nh" secondAttribute="trailing" constant="12" id="fcM-tP-hei"/>
-                            <constraint firstItem="HlI-Kf-9nh" firstAttribute="top" secondItem="QzZ-kE-ie0" secondAttribute="top" id="g7b-Zg-83X"/>
-                            <constraint firstItem="QzZ-kE-ie0" firstAttribute="top" secondItem="VTO-Ii-7tl" secondAttribute="top" constant="27" id="kZa-vO-a3L"/>
                             <constraint firstItem="fEB-VS-4zy" firstAttribute="top" secondItem="XCW-Fh-OSX" secondAttribute="bottom" constant="19" id="obB-Yv-ThO"/>
                             <constraint firstItem="HlI-Kf-9nh" firstAttribute="top" secondItem="VTO-Ii-7tl" secondAttribute="top" constant="27" id="shu-SA-87P"/>
                         </constraints>
