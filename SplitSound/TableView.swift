@@ -19,26 +19,26 @@ class TableViewController: UITableViewController {
     }
     
     //temporary counter for testing
-    var count = 0
+    //var count = 0
     //**
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "listenerCell", for: indexPath)
         cell.textLabel?.text = listeners[indexPath.item]
         
         //image testing
-        if(count == 0) {
+        if(indexPath.item == 0) {
             cell.imageView?.image = UIImage(named: "logo_ios")
-        } else if(count == 1) {
+        } else if(indexPath.item == 1) {
              cell.imageView?.image = UIImage(named: "logo_android")
-        } else if(count == 2) {
+        } else if(indexPath.item == 2) {
              cell.imageView?.image = UIImage(named: "logo_osx")
-        } else if(count == 3) {
+        } else if(indexPath.item == 3) {
              cell.imageView?.image = UIImage(named: "logo_wndows")
-        } else if(count == 4) {
+        } else if(indexPath.item == 4) {
              cell.imageView?.image = UIImage(named: "logo_linux")
         }
         //*************
-        count += 1
+        //count += 1
         return cell
     }
     
