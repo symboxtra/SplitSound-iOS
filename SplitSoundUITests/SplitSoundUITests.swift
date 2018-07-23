@@ -34,8 +34,8 @@ class SplitSoundUITests: XCTestCase {
         app.buttons["Settings"].tap()
         app.navigationBars["UIView"].buttons["Home"].tap()
         button.tap()
-        //app.otherElements.containing(.navigationBar, identifier:"Home").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .toolbar).matching(identifier: "Toolbar").element(boundBy: 1).children(matching: .other).element.children(matching: .other).element.children(matching: .button).element(boundBy: 1).tap()
-        //app.navigationBars["SplitSound.TableView"].buttons["Home"].tap()
+        app.toolbars.matching(identifier: "Toolbar").buttons["Other Listeners"].tap()
+        app.navigationBars["SplitSound.TableView"].buttons["Home"].tap()
         
     }
     
