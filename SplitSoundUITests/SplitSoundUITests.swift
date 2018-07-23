@@ -29,19 +29,13 @@ class SplitSoundUITests: XCTestCase {
     func testMainScreen() {
         
         let app = XCUIApplication()
-        app.launch()
-        let element = app.otherElements.containing(.navigationBar, identifier:"Home").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element
-        //element.swipeRight()
-        //element.children(matching: .other).element(boundBy: 1).tap()
-        element.tap()
-        app.toolbars.matching(identifier: "Toolbar").buttons["Other Listeners                                      "].tap()
-        app.navigationBars["SplitSound.TableView"].buttons["Home"].tap()
-        
         let button = app.navigationBars["Home"].children(matching: .button).element
         button.tap()
         app.buttons["Settings"].tap()
         app.navigationBars["UIView"].buttons["Home"].tap()
         button.tap()
+        app.otherElements.containing(.navigationBar, identifier:"Home").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .toolbar).matching(identifier: "Toolbar").element(boundBy: 1).children(matching: .other).element.children(matching: .other).element.children(matching: .button).element(boundBy: 1).tap()
+        app.navigationBars["SplitSound.TableView"].buttons["Home"].tap()
         
     }
     
