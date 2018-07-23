@@ -13,13 +13,11 @@
 		3EC1E1AED28D977E9ABD3467 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC1E70B3E60058BEE4FD4F0 /* ModelController.swift */; };
 		3EC1E4FC0A99426F5AD3BB33 /* SplitSoundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC1E6A643F1A2A4515404B7 /* SplitSoundTests.swift */; };
 		3EC1E68537BD474BA08549FD /* SplitSoundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC1E45ECF5144A4F3139F03 /* SplitSoundUITests.swift */; };
-		3EC1E8C601E8FD8AC556A25D /* Phone6-8.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EC1EE71F148048A3405F251 /* Phone6-8.storyboard */; };
 		3EC1E97786912C7BABE2C507 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EC1ED7EDA83C815C89493DE /* Assets.xcassets */; };
 		3EC1EAF55EE8D6ED095ECD52 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC1E9D16D265791059A9DFE /* DataViewController.swift */; };
 		3EC1EBC42EA4F220B4FB7235 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC1E2BDF3252AC4E6A47FFD /* AppDelegate.swift */; };
 		3EC1EE76C0FC4D981208AB61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EC1E0589B59065FF784A01B /* LaunchScreen.storyboard */; };
 		5C2B418620F13D040076983F /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2B418520F13D040076983F /* TableView.swift */; };
-		5C4E51D420DEE9D500A56366 /* OldAF.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C4E51D320DEE9D500A56366 /* OldAF.storyboard */; };
 		5CE72E5720D60E2E00ECA63B /* Cancer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CE72E5620D60E2E00ECA63B /* Cancer.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -57,10 +55,8 @@
 		3EC1E9D16D265791059A9DFE /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; usesTabs = 0; };
 		3EC1E9E8A90443954AF13611 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		3EC1EA18E6A43066004BD6C4 /* SplitSound.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplitSound.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3EC1EB12CAA30522C75F0F3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Phone6-8.storyboard"; sourceTree = "<group>"; };
 		3EC1ED7EDA83C815C89493DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C2B418520F13D040076983F /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
-		5C4E51D320DEE9D500A56366 /* OldAF.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OldAF.storyboard; sourceTree = "<group>"; };
 		5CE72E5620D60E2E00ECA63B /* Cancer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cancer.storyboard; sourceTree = "<group>"; };
 		7213864F207EC084001515AD /* testRTSPClient.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = testRTSPClient.h; sourceTree = "<group>"; };
 		72138651207EC26F001515AD /* SplitSound-Bridging-Header.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = "SplitSound-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -122,13 +118,11 @@
 				3EC1ED7EDA83C815C89493DE /* Assets.xcassets */,
 				3EC1E0589B59065FF784A01B /* LaunchScreen.storyboard */,
 				3EC1E2BDF3252AC4E6A47FFD /* AppDelegate.swift */,
-				3EC1EE71F148048A3405F251 /* Phone6-8.storyboard */,
 				3EC1E9D16D265791059A9DFE /* DataViewController.swift */,
 				3EC1E70B3E60058BEE4FD4F0 /* ModelController.swift */,
 				232B393B208809CB00CAD354 /* RTPController.mm */,
 				232B393D208809E000CAD354 /* RTPController.h */,
 				5CE72E5620D60E2E00ECA63B /* Cancer.storyboard */,
-				5C4E51D320DEE9D500A56366 /* OldAF.storyboard */,
 				5C2B418520F13D040076983F /* TableView.swift */,
 			);
 			path = SplitSound;
@@ -225,7 +219,7 @@
 		3EC1E271AF63445734B54B04 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Symboxtra Software";
 				TargetAttributes = {
 					3EC1E343F8F732EE66478638 = {
@@ -272,10 +266,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CE72E5720D60E2E00ECA63B /* Cancer.storyboard in Resources */,
-				5C4E51D420DEE9D500A56366 /* OldAF.storyboard in Resources */,
 				3EC1E97786912C7BABE2C507 /* Assets.xcassets in Resources */,
 				3EC1EE76C0FC4D981208AB61 /* LaunchScreen.storyboard in Resources */,
-				3EC1E8C601E8FD8AC556A25D /* Phone6-8.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,14 +334,6 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		3EC1EE71F148048A3405F251 /* Phone6-8.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3EC1EB12CAA30522C75F0F3D /* Base */,
-			);
-			name = "Phone6-8.storyboard";
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -405,6 +389,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -412,6 +397,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -503,6 +489,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -510,6 +497,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

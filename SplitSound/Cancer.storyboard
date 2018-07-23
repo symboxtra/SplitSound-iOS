@@ -71,7 +71,7 @@
                                     <constraint firstAttribute="height" constant="175" id="T4r-1Q-b7t"/>
                                     <constraint firstAttribute="width" secondItem="HIm-6M-hTG" secondAttribute="height" multiplier="1:1" id="j6Y-We-zUy"/>
                                 </constraints>
-                                <state key="normal" image="Middle"/>
+                                <state key="normal" title="BBB" image="Middle"/>
                             </button>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gUD-Hr-PMb">
                                 <rect key="frame" x="0.0" y="34" width="375" height="44"/>
@@ -85,7 +85,7 @@
                                     <constraint firstAttribute="width" constant="50" id="uwS-Zo-1S5"/>
                                 </constraints>
                                 <color key="tintColor" red="0.56722124340000002" green="0.57422397479999998" blue="0.57422397479999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" image="baseline_play_arrow_white_48pt"/>
+                                <state key="normal" title="Play" image="baseline_play_arrow_white_48pt"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="25"/>
@@ -97,7 +97,7 @@
                                 <rect key="frame" x="100" y="521" width="40" height="40"/>
                                 <color key="backgroundColor" red="0.41176470588235292" green="0.40784313725490196" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.56722124340000002" green="0.57422397479999998" blue="0.57422397479999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" image="baseline_skip_previous_white_48pt"/>
+                                <state key="normal" title="SkipBack" image="baseline_skip_previous_white_48pt"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="20"/>
@@ -109,7 +109,7 @@
                                 <rect key="frame" x="235" y="521" width="40" height="40"/>
                                 <color key="backgroundColor" red="0.41176470590000003" green="0.40784313729999999" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.56722124342548996" green="0.57422397482580467" blue="0.57422397482580467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" image="baseline_skip_next_white_48pt"/>
+                                <state key="normal" title="SkipForward" image="baseline_skip_next_white_48pt"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="20"/>
