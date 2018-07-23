@@ -27,11 +27,17 @@ class SplitSoundUITests: XCTestCase {
     }
     
     func testMainScreen() {
-        //determine existence of buttons
-        XCTAssertTrue(XCUIApplication().buttons["BBB"].exists)
-        XCTAssertTrue(XCUIApplication().buttons["Play"].exists)
-        XCTAssertTrue(XCUIApplication().buttons["SkipBack"].exists)
-        XCTAssertTrue(XCUIApplication().buttons["SkipForward"].exists)
+        
+        let app = XCUIApplication()
+        app.navigationBars["Home"].children(matching: .button).element.tap()
+        
+        let element = app.otherElements.containing(.navigationBar, identifier:"Home").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element
+        element.children(matching: .other).element(boundBy: 0).tap()
+        app.toolbars.matching(identifier: "Toolbar").buttons["Other Listeners                                      "].tap()
+        app.navigationBars["SplitSound.TableView"].buttons["Home"].tap()
+        element.swipeRight()
+        element.children(matching: .other).element(boundBy: 1).tap()
+        
         
     }
     
