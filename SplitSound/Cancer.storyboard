@@ -55,7 +55,6 @@
                                             <segue destination="h8z-TC-jmu" kind="show" id="yRw-BL-oi0"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem width="163" style="plain" systemItem="fixedSpace" id="Hry-4E-ibf"/>
                                     <barButtonItem image="baseline_people_black_48pt" id="L0x-Wh-8wq">
                                         <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>

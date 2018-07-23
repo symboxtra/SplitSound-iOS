@@ -29,6 +29,7 @@ class SplitSoundUITests: XCTestCase {
     func testMainScreen() {
         
         let app = XCUIApplication()
+        app.launch()
         let button = app.navigationBars["Home"].children(matching: .button).element
         button.tap()
         app.buttons["Settings"].tap()
