@@ -31,7 +31,7 @@ class SplitSoundUITests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
         let element = app.otherElements.containing(.navigationBar, identifier:"Home").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element
-        element.swipeRight()
+        //element.swipeRight()
         //element.children(matching: .other).element(boundBy: 1).tap()
         element.tap()
         app.toolbars.matching(identifier: "Toolbar").buttons["Other Listeners                                      "].tap()
