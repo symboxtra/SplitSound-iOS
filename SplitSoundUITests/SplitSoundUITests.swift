@@ -53,7 +53,18 @@ class SplitSoundUITests: XCTestCase {
         designChoiceStaticText.tap()
         app.navigationBars["SplitSound.TableView"].buttons["Home"].tap()
         
+    }
+    
+    //test drawer
+    func testDrawer() {
         
+        let button = XCUIApplication().navigationBars["Home"].children(matching: .button).element
+        button.tap()
+        button.tap()
+        button.tap()
+        button.tap()
+       
+                
     }
     
 }
