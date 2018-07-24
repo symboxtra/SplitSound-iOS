@@ -42,7 +42,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cRB-WE-fXs">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gUD-Hr-PMb">
+                                <rect key="frame" x="0.0" y="34" width="375" height="44"/>
+                                <items/>
+                            </toolbar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cRB-WE-fXs" userLabel="Bottom Bar">
                                 <rect key="frame" x="0.0" y="734" width="375" height="44"/>
                                 <color key="backgroundColor" white="0.31579914539999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -73,10 +77,6 @@
                                 </constraints>
                                 <state key="normal" title="BBB" image="Middle"/>
                             </button>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gUD-Hr-PMb">
-                                <rect key="frame" x="0.0" y="34" width="375" height="44"/>
-                                <items/>
-                            </toolbar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2uG-UH-VcB">
                                 <rect key="frame" x="162" y="511" width="50" height="50"/>
                                 <color key="backgroundColor" red="0.41055188199134413" green="0.40678500754877389" blue="0.41315171632124348" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -85,7 +85,7 @@
                                     <constraint firstAttribute="width" constant="50" id="uwS-Zo-1S5"/>
                                 </constraints>
                                 <color key="tintColor" red="0.56722124340000002" green="0.57422397479999998" blue="0.57422397479999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Play" image="baseline_play_arrow_white_48pt"/>
+                                <state key="normal" image="baseline_play_arrow_white_48pt"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="25"/>
@@ -97,7 +97,7 @@
                                 <rect key="frame" x="100" y="521" width="40" height="40"/>
                                 <color key="backgroundColor" red="0.41176470588235292" green="0.40784313725490196" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.56722124340000002" green="0.57422397479999998" blue="0.57422397479999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="SkipBack" image="baseline_skip_previous_white_48pt"/>
+                                <state key="normal" image="baseline_skip_previous_white_48pt"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="20"/>
@@ -105,11 +105,11 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzT-0g-IKE">
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="Bottom Bar" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzT-0g-IKE">
                                 <rect key="frame" x="235" y="521" width="40" height="40"/>
                                 <color key="backgroundColor" red="0.41176470590000003" green="0.40784313729999999" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.56722124342548996" green="0.57422397482580467" blue="0.57422397482580467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="SkipForward" image="baseline_skip_next_white_48pt"/>
+                                <state key="normal" image="baseline_skip_next_white_48pt"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="20"/>

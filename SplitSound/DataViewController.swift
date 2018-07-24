@@ -20,6 +20,7 @@ class DataViewController: UIViewController {
     @IBOutlet weak var drawer: UIView!
     @IBOutlet weak var drawerLeading: NSLayoutConstraint!
     
+    
     override func viewDidLoad() {
     super.viewDidLoad()
         //move drawer if the app is being opened

@@ -26,13 +26,9 @@ class SplitSoundUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testMainScreen() {
-        //launch app
-        let app = XCUIApplication()
-        app.launch()
+    func testBottomToolbar() {
         
-        //bottom toolbar tests
-        XCTAssertTrue(app.toolbars.matching(identifier: "Toolbar").buttons["Other Listeners"].exists)
+        let app = XCUIApplication()
         app.toolbars.matching(identifier: "Toolbar").buttons["Other Listeners"].tap()
         app.navigationBars["SplitSound.TableView"].buttons["Home"].tap()
         
