@@ -26,12 +26,11 @@ class SplitSoundUITests: XCTestCase {
         super.tearDown()
     }
     
+    //make sure bottom toolbar works
     func testBottomToolbar() {
-        
         let app = XCUIApplication()
-        app.toolbars.matching(identifier: "Toolbar").buttons["Other Listeners"].tap()
+        app.toolbars["Bottom Bar"].buttons["Other Listeners"].tap()
         app.navigationBars["SplitSound.TableView"].buttons["Home"].tap()
-        
     }
     
 }

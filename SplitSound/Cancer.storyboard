@@ -210,6 +210,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="BottomBar" destination="cRB-WE-fXs" id="brN-9q-rKT"/>
                         <outlet property="drawer" destination="Iug-CA-K0T" id="cGT-h5-7IL"/>
                         <outlet property="drawerLeading" destination="h9h-AL-g6T" id="hYC-sG-7WO"/>
                     </connections>

@@ -20,6 +20,8 @@ class DataViewController: UIViewController {
     @IBOutlet weak var drawer: UIView!
     @IBOutlet weak var drawerLeading: NSLayoutConstraint!
     
+    //outlet for bottom bar
+    @IBOutlet weak var BottomBar: UIToolbar!
     
     override func viewDidLoad() {
     super.viewDidLoad()
@@ -30,6 +32,10 @@ class DataViewController: UIViewController {
         }
         drawer.layer.shadowRadius = 3
         drawer.layer.shadowOpacity = 50
+        
+        //manually set identifier for bottom bar
+        BottomBar.accessibilityIdentifier = "Bottom Bar"
+        BottomBar.restorationIdentifier = "Bottom Bar"
         //var instanceOfRTPSession: RTPSession = RTPSession();
         
         //let Object = OCPPClass()
