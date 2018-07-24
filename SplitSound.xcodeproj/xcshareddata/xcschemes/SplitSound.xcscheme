@@ -76,6 +76,11 @@
                BlueprintName = "SplitSoundUITests"
                ReferencedContainer = "container:SplitSound.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "SplitSoundUITests/testExample()">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
       <MacroExpansion>
