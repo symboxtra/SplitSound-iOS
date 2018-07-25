@@ -11,4 +11,4 @@
 set -o pipefail
 
 # Ensure compilation for x86 emulators
-CFLAGS="ONLY_ACTIVE_ARCH=NO"
+CFLAGS="ONLY_ACTIVE_ARCH=YES VALID_ARCHS=x86_64"
