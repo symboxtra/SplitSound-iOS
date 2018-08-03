@@ -1,5 +1,5 @@
 ignore:
     - "Pods"
     - "lib-rtp/"
-    - "RTPController*"
-    - "testRTSPClient*"
+    - "RTPController.mm"
+    - "testRTSPClient.mm"
