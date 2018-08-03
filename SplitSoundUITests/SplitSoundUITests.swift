@@ -58,12 +58,16 @@ class SplitSoundUITests: XCTestCase {
     //test drawer
     func testDrawer() {
         
-        let button = XCUIApplication().navigationBars["Home"].children(matching: .button).element
+        let app = XCUIApplication()
+        let button = app.navigationBars["Home"].children(matching: .button).element
         button.tap()
         button.tap()
         button.tap()
+        
+        let element = app.otherElements.containing(.navigationBar, identifier:"Home").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element
+        element.children(matching: .other).element(boundBy: 1).tap()
         button.tap()
-       
+        element.children(matching: .other).element(boundBy: 0).tap()
                 
     }
     
