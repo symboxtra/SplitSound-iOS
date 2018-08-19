@@ -51,8 +51,5 @@ class TableViewController: UITableViewController {
         super.viewDidLoad()
         //load any additional things to be loaded on open here
     }
-    
-    @IBAction func DismissPressed(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
+
 }

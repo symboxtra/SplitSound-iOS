@@ -1,4 +1,4 @@
 ignore:
     - "Pods"
-    - "**/*View.swift"
     - "lib-rtp/"
+    - "**/*.mm"
