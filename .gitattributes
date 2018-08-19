@@ -1,0 +1,2 @@
+# Ignore when calculating language stats
+lib-rtp/* linguist-vendored
